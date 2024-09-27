@@ -6,7 +6,8 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.0);
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background-color: transparent;
     border: none;
     color: #ffffff;
     transition-property: background-color;
@@ -110,19 +111,19 @@ button:hover {
 
 #clock {
     font-family: "Digital Display", sans-serif; 
-    color: #00FF00;
+    color: rgba(0, 255, 0, 1);
     background-color: rgba(0, 0, 0, 0.0);
     font-size: 35px;
 }
 
 #battery {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #000000;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(38, 166, 91, 0.5);
 }
 
 @keyframes blink {
@@ -133,7 +134,7 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    background-color: rgba(245, 60, 60, 0.5);
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -147,12 +148,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.5);
     color: #000000;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: rgba(155, 89, 182, 0.5);
 }
 
 #disk {
@@ -160,7 +161,7 @@ label:focus {
 }
 
 #backlight {
-    background-color: #90b1b1;
+    background-color: rgba(144, 177, 177, 0.5);
 }
 
 #network {
@@ -172,8 +173,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: rgba(241, 196, 15, 0.50);
+    color: rgba(0, 0, 0, 1);
 }
 
 #pulseaudio.muted {
@@ -205,15 +206,15 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: rgba(240, 147, 43, 0.5);
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: rgba(235, 77, 75, 0.5);
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: rgba(41, 128, 185, 0.5);
 }
 
 #tray > .passive {
