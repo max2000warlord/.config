@@ -2,20 +2,20 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "NotoSans Nerd Font", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
-    border-radius: 10px;
 }
 
 window#waybar {
     /*background-color: rgba(0, 0, 0, 0.3);*/
     background-color: transparent;
     border: none;
-    color: #ffffff;
+    color: rgba(23, 147, 218, 1);
     transition-property: background-color;
     transition-duration: .5s;
+    
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 0.0;
 }
 
 /*
@@ -51,9 +51,9 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    /*padding: 0 5px;*/
     background-color: transparent;
-    color: #ffffff;
+    color: rgba(23, 147, 218, 1);
 }
 
 #workspaces button:hover {
@@ -90,13 +90,13 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    padding: 0 10px;
+    padding: 0 5px;
     color: #ffffff;
 }
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 0px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -111,19 +111,20 @@ button:hover {
 
 #clock {
     font-family: "Digital Display", sans-serif; 
-    color: rgba(0, 255, 0, 1);
-    background-color: rgba(0, 0, 0, 0.0);
+    color: rgba(23, 147, 218, 1);
+    /*color: rgba(0, 255, 0, 1);*/
+    background-color: transparent;
     font-size: 35px;
 }
 
 #battery {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000000;
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #battery.charging, #battery.plugged {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(38, 166, 91, 0.5);
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 @keyframes blink {
@@ -134,8 +135,8 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: rgba(245, 60, 60, 0.5);
-    color: #ffffff;
+    background-color: transparent;
+    color: rgba(255, 0, 0, 1);
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -148,12 +149,13 @@ label:focus {
 }
 
 #cpu {
-    background-color: rgba(46, 204, 113, 0.5);
-    color: #000000;
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #memory {
-    background-color: rgba(155, 89, 182, 0.5);
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #disk {
@@ -161,7 +163,8 @@ label:focus {
 }
 
 #backlight {
-    background-color: rgba(144, 177, 177, 0.5);
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #network {
@@ -173,13 +176,13 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: rgba(241, 196, 15, 0.50);
-    color: rgba(0, 0, 0, 1);
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #wireplumber {
@@ -206,15 +209,18 @@ label:focus {
 }
 
 #temperature {
-    background-color: rgba(240, 147, 43, 0.5);
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #temperature.critical {
-    background-color: rgba(235, 77, 75, 0.5);
+    background-color: transparent;
+    color: rgba(255, 0, 0, 1);
 }
 
 #tray {
-    background-color: rgba(41, 128, 185, 0.5);
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #tray > .passive {
@@ -227,12 +233,13 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 
 #mpd {
@@ -255,8 +262,8 @@ label:focus {
 #language {
     background: #00b093;
     color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
+    padding: 0 0px;
+    margin: 0 0px;
     min-width: 16px;
 }
 
@@ -285,14 +292,14 @@ label:focus {
 }
 
 #custom-protonmail.unread {
-    background: #382580;
-    color: #E2DBFF;
+    background-color: transparent;
+    color: rgba(23, 147, 218, 1);
 }
 #custom-protonmail.inaccurate {
-    background: #382580;
+    background-color: transparent;
     color: darkorange;
 }
 #custom-protonmail.error {
-    background: #382580;
+    background-color: transparent;
     color: darkred;
 }
