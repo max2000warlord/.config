@@ -1,21 +1,17 @@
 {
   "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "margin-top": 5, // Waybar height (to be removed for auto height)
   "height": 30, // Waybar height (to be removed for auto height)
   "width": 1920, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": [
-    "hyprland/workspaces"
-  ],
-  "modules-center": [
-    "clock"
-  ],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
   "modules-right": [
     "mpd",
     "idle_inhibitor",
     "pulseaudio",
-    //"network",
     "cpu",
     "memory",
     "temperature",
@@ -23,7 +19,6 @@
     "custom/protonmail",
     "keyboard-state",
     "battery",
-    "battery#bat2",
     "tray"
   ],
   "bar_id": "bar-0",
@@ -65,10 +60,7 @@
   "hyprland/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
-    "format-icons": [
-      "",
-      ""
-    ],
+    "format-icons": ["", ""],
     "tooltip": true,
     "tooltip-format": "{app}: {title}"
   },
@@ -128,28 +120,12 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{icon} {temperatureC}󰔄",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""]
   },
   "backlight": {
     // "device": "acpi_video1",
     "format": "{icon} {percent}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
   "battery": {
     "states": {
@@ -163,13 +139,7 @@
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""]
   },
   "battery#bat2": {
     "bat": "BAT2"
@@ -177,13 +147,7 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{icon}",
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ],
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
@@ -206,11 +170,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
   },
