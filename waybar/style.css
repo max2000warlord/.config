@@ -1,7 +1,8 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "NotoSans Nerd Font", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "NotoSans Nerd Font", "Hack Nerd Font", Helvetica, Arial,
+    sans-serif;
+  font-size: 18px;
 }
 
 #waybar {
@@ -9,7 +10,7 @@
 
 window#waybar {
   /*background-color: rgba(0, 0, 0, 0.3);*/
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.8);
   border: none;
   color: rgba(23, 147, 218, 1);
   transition-property: background-color;

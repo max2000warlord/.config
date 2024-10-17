@@ -2,8 +2,8 @@
   "$schema": "json_schema.json",
   "logo": {
     "type": "kitty",
-    "source": "/home/max/.config/fastfetch/arch.png",
-    "width": 30,
+    "source": "/home/max/.config/fastfetch/artix.png",
+    "width": 27,
     "padding": {
       "top": 1,
       "right": 2,
@@ -17,7 +17,7 @@
   "modules": [
     {
       "type": "custom", // HardwareStart
-      "format": "\u001b[38;2;23;147;209m╭───────┤ \u001b[1;34mHardware Information\u001b[38;2;23;147;209m ├───────╮\u001b[0m"
+      "format": "\u001b[38;2;16;175;223m╭───────┤ \u001b[1;34mHardware Information\u001b[38;2;16;175;223m ├───────╮\u001b[0m"
       // \u001b[1;34m sets the text to bold blue, \u001b[0m resets the color
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m├───────┤ \u001b[1;34mSoftware Information\u001b[38;2;23;147;209m ├───────┤\u001b[0m"
+      "format": "\u001b[38;2;16;175;223m├───────┤ \u001b[1;34mSoftware Information\u001b[38;2;16;175;223m ├───────┤\u001b[0m"
     },
     {
       "type": "title",
@@ -52,7 +52,8 @@
     },
     {
       "type": "os",
-      "key": "\u001b[38;2;23;147;209m󰣇\u001b[0m" // Just get your distro's logo off nerdfonts.com
+      "key": "\u001b[38;2;16;175;223m\u001b[0m",
+      "format": "{2} (dinit)"
     },
     {
       "type": "kernel",
@@ -91,7 +92,7 @@
     },
     {
       "type": "custom", // InformationEnd
-      "format": "\u001b[38;2;23;147;209m╰──────────────────────────────────────╯\u001b[0m\n"
+      "format": "\u001b[38;2;16;175;223m╰──────────────────────────────────────╯\u001b[0m\n"
     }
   ]
 }
