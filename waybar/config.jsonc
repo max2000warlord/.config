@@ -17,7 +17,6 @@
     "temperature",
     "backlight",
     "custom/protonmail",
-    //"keyboard-state",
     "battery",
     "tray"
   ],
@@ -112,7 +111,7 @@
     "tooltip": false
   },
   "memory": {
-    "format": " {}%"
+    "format": " {}%"
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -140,9 +139,6 @@
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": ["", "", "", "", ""]
-  },
-  "battery#bat2": {
-    "bat": "BAT2"
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface

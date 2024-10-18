@@ -3,23 +3,20 @@
   "logo": {
     "type": "kitty",
     "source": "/home/max/.config/fastfetch/artix.png",
-    "width": 33,
+    "width": 40,
     "padding": {
       "top": 0,
-      "right": 2,
+      "right": 0,
       "left": 0
     }
-    //"height": 10
   },
   "display": {
-    //"separator": "\u001b[38;2;255;255;255m  \u001b[0m"
     "separator": ""
   },
   "modules": [
     {
       "type": "custom", // HardwareStart
       "format": "\u001b[38;2;16;175;223m╭───────┤ \u001b[1;34mHardware Information\u001b[38;2;16;175;223m ├───────╮\u001b[0m"
-      // \u001b[1;34m sets the text to bold blue, \u001b[0m resets the color
     },
     {
       "type": "cpu",
@@ -36,8 +33,7 @@
     },
     {
       "type": "display",
-      "key": "󰍹 \u001b[38;2;255;255;255m \u001b[0m",
-      "format": "{1}×{2} @ {3}Hz"
+      "key": "󰍹 \u001b[38;2;255;255;255m \u001b[0m"
     },
     {
       "type": "battery",
@@ -85,18 +81,10 @@
       "key": "\u001b[38;2;255;204;0m󰮯\u001b[38;2;255;255;255m  \u001b[0m",
       "format": "{1}"
     },
-    //{
-    //  "type": "uptime",
-    //  "key": "󰅐\u001b[38;2;255;255;255m  \u001b[0m"
-    //},
     {
       "type": "wifi",
       "key": "\u001b[38;2;255;255;255m  \u001b[0m" // Green color for disk icon,
     },
-    //{
-    //  "type": "locale",
-    //  "key": "\u001b[38;2;255;255;255m  \u001b[0m" //Just get your distro icon from https://www.nerdfonts.com/cheat-sheet
-    //},
     {
       "type": "custom", // InformationEnd
       "format": "\u001b[38;2;16;175;223m╰──────────────────────────────────────╯\u001b[0m\n"
