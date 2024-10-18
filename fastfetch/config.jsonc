@@ -3,7 +3,7 @@
   "logo": {
     "type": "kitty",
     "source": "/home/max/.config/fastfetch/artix.png",
-    "width": 35,
+    "width": 33,
     "padding": {
       "top": 0,
       "right": 2,
@@ -12,7 +12,8 @@
     //"height": 10
   },
   "display": {
-    "separator": "  "
+    //"separator": "\u001b[38;2;255;255;255m  \u001b[0m"
+    "separator": ""
   },
   "modules": [
     {
@@ -22,24 +23,26 @@
     },
     {
       "type": "cpu",
-      "key": "\u001b[38;2;255;0;0m󰻠\u001b[0m"
+      "key": "\u001b[38;2;255;0;0m \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{1} @ {7}"
     },
     {
       "type": "disk",
-      "key": "\u001b[1;32m󰋊\u001b[0m" // Green color for disk icon,
+      "key": "\u001b[1;32m󰋊 \u001b[38;2;255;255;255m \u001b[0m" // Green color for disk icon,
     },
     {
       "type": "memory",
-      "key": "\u001b[1;33m󰑭\u001b[0m" // Yellow color for memory icon
+      "key": "\u001b[1;33m \u001b[38;2;255;255;255m \u001b[0m" // Yellow color for memory icon
     },
     {
       "type": "display",
-      "key": "󰍹"
-      //"format": "{1}×{2} @ {3}Hz"
+      "key": "󰍹 \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{1}×{2} @ {3}Hz"
     },
     {
       "type": "battery",
-      "key": ""
+      "key": "󰄌 \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{4} [{5}] {10}"
     },
     {
       "type": "custom", // SoftwareStart
@@ -47,52 +50,53 @@
     },
     {
       "type": "title",
-      "key": "",
+      "key": "\u001b[38;2;255;255;255m  \u001b[0m",
       "format": "{1}@{2}"
     },
     {
       "type": "os",
-      "key": "\u001b[38;2;16;175;223m\u001b[0m" //Just get your distro icon from https://www.nerdfonts.com/cheat-sheet
-    },
-    {
-      "type": "initsystem",
-      "key": ""
+      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m"
     },
     {
       "type": "kernel",
-      "key": "\u001b[38;2;255;255;255m\u001b[0m" //Just get your distro icon from https://www.nerdfonts.com/cheat-sheet
+      "key": "\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
+      "format": "{2}"
+    },
+    {
+      "type": "initsystem",
+      "key": "\u001b[38;2;255;255;255m  󱞪 \u001b[0m"
     },
     {
       "type": "wm",
-      "key": "",
+      "key": "\u001b[38;2;0;164;245m\u001b[38;2;255;255;255m  \u001b[0m",
       "format": "{1}"
     },
     {
       "type": "shell",
-      "key": ""
+      "key": "\u001b[38;2;255;255;255m  \u001b[0m"
     },
     {
       "type": "terminal",
-      "key": "",
+      "key": "\u001b[38;2;0;255;0m\u001b[38;2;255;255;255m  \u001b[0m",
       "format": "{5}"
     },
     {
       "type": "packages",
-      "key": "\u001b[38;2;255;204;0m󰮯\u001b[0m",
+      "key": "\u001b[38;2;255;204;0m󰮯\u001b[38;2;255;255;255m  \u001b[0m",
       "format": "{1}"
     },
-    {
-      "type": "uptime",
-      "key": "󰅐"
-    },
+    //{
+    //  "type": "uptime",
+    //  "key": "󰅐\u001b[38;2;255;255;255m  \u001b[0m"
+    //},
     {
       "type": "wifi",
-      "key": ""
+      "key": "\u001b[38;2;255;255;255m  \u001b[0m" // Green color for disk icon,
     },
-    {
-      "type": "locale",
-      "key": ""
-    },
+    //{
+    //  "type": "locale",
+    //  "key": "\u001b[38;2;255;255;255m  \u001b[0m" //Just get your distro icon from https://www.nerdfonts.com/cheat-sheet
+    //},
     {
       "type": "custom", // InformationEnd
       "format": "\u001b[38;2;16;175;223m╰──────────────────────────────────────╯\u001b[0m\n"
