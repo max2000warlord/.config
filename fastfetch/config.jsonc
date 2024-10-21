@@ -3,11 +3,11 @@
   "logo": {
     "type": "kitty",
     "source": "/home/max/.config/fastfetch/artix.png",
-    "height": 20,
+    "height": 15,
     "padding": {
-      "top": 0,
-      "right": 0,
-      "left": 0
+      "top": 1,
+      "right": 3,
+      "left": 3
     }
   },
   "display": {
@@ -29,7 +29,7 @@
     },
     {
       "type": "memory",
-      "key": "\u001b[1;33m \u001b[38;2;255;255;255m \u001b[0m" // Yellow color for memory icon
+      "key": "\u001b[1;33m \u001b[38;2;255;255;255m \u001b[0m"
     },
     {
       "type": "display",
@@ -39,6 +39,10 @@
       "type": "battery",
       "key": "󰄌 \u001b[38;2;255;255;255m \u001b[0m"
     },
+    //{
+    //  "type": "custom",
+    //  "format": "\u001b[38;2;16;175;223m│\u001b[0m"
+    //},
     {
       "type": "custom", // SoftwareStart
       "format": "\u001b[38;2;16;175;223m├───────┤ \u001b[1;34mSoftware Information\u001b[38;2;16;175;223m ├───────┤\u001b[0m"
