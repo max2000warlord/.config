@@ -1,1 +1,2 @@
-sudo pacman -S fd ripgrep bat zellij hyprland hyprcursor waypaper swww rofi-wayland waybar --noconfirm
+![hypr](/hypr/config-example.png)
+sudo pacman -S fd ripgrep bat hyprland hyprcursor waypaper swww waybar
