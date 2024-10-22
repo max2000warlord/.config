@@ -54,7 +54,7 @@
     },
     {
       "type": "os",
-      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m"
+      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m" //Find your distro's logo at https://www.nerdfonts.com/cheat-sheet
     },
     {
       "type": "kernel",
