@@ -10,9 +10,9 @@
 
 window#waybar {
   /*background-color: rgba(0, 0, 0, 0.3);*/
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   border: none;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -56,7 +56,7 @@ button:hover {
 #workspaces button {
   /*padding: 0 5px;*/
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #workspaces button:hover {
@@ -114,8 +114,8 @@ button:hover {
 
 #clock {
   font-family: "Digital Display", sans-serif;
-  /*color: rgba(23, 147, 218, 1);*/
-  color: rgba(23, 147, 218, 1);
+  /*color: rgba(16, 175, 223, 1);*/
+  color: rgba(16, 175, 223, 1);
   /*color: rgba(0, 255, 0, 1);*/
   background-color: transparent;
   font-size: 35px;
@@ -123,13 +123,13 @@ button:hover {
 
 #battery {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #battery.charging,
 #battery.plugged {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 @keyframes blink {
@@ -155,12 +155,12 @@ label:focus {
 
 #cpu {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #memory {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #disk {
@@ -169,7 +169,7 @@ label:focus {
 
 #backlight {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #network {
@@ -182,12 +182,12 @@ label:focus {
 
 #pulseaudio {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #pulseaudio.muted {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #wireplumber {
@@ -215,7 +215,7 @@ label:focus {
 
 #temperature {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #temperature.critical {
@@ -225,7 +225,7 @@ label:focus {
 
 #tray {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #tray > .passive {
@@ -239,12 +239,12 @@ label:focus {
 
 #idle_inhibitor {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #idle_inhibitor.activated {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 
 #mpd {
@@ -298,7 +298,7 @@ label:focus {
 
 #custom-protonmail.unread {
   background-color: transparent;
-  color: rgba(23, 147, 218, 1);
+  color: rgba(16, 175, 223, 1);
 }
 #custom-protonmail.inaccurate {
   background-color: transparent;
