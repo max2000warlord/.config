@@ -25,4 +25,5 @@ require("neo-tree").setup({
     },
   },
 })
-vim.cmd([[colorscheme cyberdream]])
+
+vim.cmd("autocmd! BufWritePost *.zig lua require('neo-tree.events').fire_event('vim_buffer_changed')")

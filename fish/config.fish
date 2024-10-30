@@ -1,6 +1,6 @@
-fastfetch
 set fish_greeting
 if status is-interactive
+    fastfetch
 end
 zoxide init fish | source
 ################################
@@ -16,12 +16,15 @@ alias gc="git clone"
 alias cd="z"
 alias exe="sudo chmod +x"
 alias nv="nvim"
+alias sudo="doas"
 alias qqq="loginctl reboot"
 alias ctl="sudo dinitctl"
 alias sss="source ~/.config/fish/config.fish"
 alias sshh="eval (ssh-agent -c) && ssh-add ~/.ssh/id_ed25519"
 alias fw="sudo firewall-cmd"
 alias ls="lsd -alh --color=auto"
+alias yz="yazi"
+#alias sth=""
 
 #######################
 ### PATH stuff etc. ###
@@ -32,4 +35,5 @@ set NPM_PACKAGES "$HOME/.npm-packages"
 set PATH $PATH $NPM_PACKAGES/bin
 set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set MANPATH $NPM_PACKAGES/share/man $MANPATH
-set -x LD_LIBRARY_PATH /home/max/.local/lib/arch-mojo $LD_LIBRARY_PATH
+set -x GDK_BACKEND wayland
+set -x XDG_SESSION_TYPE wayland
