@@ -9,11 +9,18 @@ return {
         -- Default group
         default = {
           augend.integer.alias.decimal, -- Decimal numbers (1, 2, 3, etc.)
-          augend.date.alias["%Y/%m/%d"], -- Date (YYYY/MM/DD format)
+          augend.date.alias["%d/%m/%Y"], -- Date (YYYY/MM/DD format)
 
           -- Custom augend for toggling true/false
           augend.constant.new({
             elements = { "true", "false" },
+            word = true,
+            cyclic = true,
+          }),
+
+          -- Custom augend for toggling var/const
+          augend.constant.new({
+            elements = { "var", "const" },
             word = true,
             cyclic = true,
           }),
