@@ -25,6 +25,34 @@ return {
             cyclic = true,
           }),
 
+          -- Custom augend for iterating through unsigned integers
+          augend.constant.new({
+            elements = {
+              "u8",
+              "u16",
+              "u32",
+              "u64",
+              "u128",
+              "usize",
+            },
+            word = true,
+            cyclic = true,
+          }),
+
+          -- Custom augend for iterating through signed integers
+          augend.constant.new({
+            elements = {
+              "i8",
+              "i16",
+              "i32",
+              "i64",
+              "i128",
+              "isize",
+            },
+            word = true,
+            cyclic = true,
+          }),
+
           -- Custom augend for iterating days of the week
           augend.constant.new({
             elements = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" },
