@@ -1,7 +1,7 @@
 set fish_greeting
 if status is-interactive
-    fastfetch
 end
+sleep 0.1 && clear && fastfetch
 zoxide init fish | source
 ################################
 #####       ALIASES       ######

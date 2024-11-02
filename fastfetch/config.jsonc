@@ -37,12 +37,9 @@
     },
     {
       "type": "battery",
-      "key": "󰄌 \u001b[38;2;255;255;255m \u001b[0m"
+      "key": "󰄌 \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{4} [{5}]"
     },
-    //{
-    //  "type": "custom",
-    //  "format": "\u001b[38;2;16;175;223m│\u001b[0m"
-    //},
     {
       "type": "custom", // SoftwareStart
       "format": "\u001b[38;2;16;175;223m├───────┤ \u001b[1;34mSoftware Information\u001b[38;2;16;175;223m ├───────┤\u001b[0m"
