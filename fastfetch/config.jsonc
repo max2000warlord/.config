@@ -51,7 +51,9 @@
     },
     {
       "type": "os",
-      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m" //Find your distro's logo at https://www.nerdfonts.com/cheat-sheet
+      //Find your distro's logo at https://www.nerdfonts.com/cheat-sheet
+      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m",
+      "format": "{3}"
     },
     {
       "type": "kernel",
@@ -60,7 +62,8 @@
     },
     {
       "type": "initsystem",
-      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m"
+      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
+      "format": "{1} (v{3})"
     },
     {
       "type": "wm",

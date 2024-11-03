@@ -1,7 +1,7 @@
 set fish_greeting
 if status is-interactive
 end
-sleep 0.1 && clear && fastfetch
+sleep 0.05 && fastfetch
 zoxide init fish | source
 ################################
 #####       ALIASES       ######
@@ -23,7 +23,7 @@ alias sss="source ~/.config/fish/config.fish"
 alias sshh="eval (ssh-agent -c) && ssh-add ~/.ssh/id_ed25519"
 alias fw="sudo firewall-cmd"
 alias ls="lsd -alh --color=auto"
-alias yz="yazi"
+alias az="yazi"
 #alias sth=""
 
 #######################
@@ -33,6 +33,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 set NPM_PACKAGES "$HOME/.npm-packages"
 set PATH $PATH $NPM_PACKAGES/bin
+set -Ux WP_PATH (cat ~/.cache/swww/eDP-1)
 set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set MANPATH $NPM_PACKAGES/share/man $MANPATH
 set -x GDK_BACKEND wayland

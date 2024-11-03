@@ -10,7 +10,7 @@
 
 window#waybar {
   /*background-color: rgba(0, 0, 0, 0.3);*/
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
   color: rgba(16, 175, 223, 1);
   transition-property: background-color;
@@ -308,4 +308,23 @@ label:focus {
 #custom-protonmail.error {
   background-color: transparent;
   color: darkred;
+}
+
+#custom-power {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #2e3440;
+  border-radius: 5px;
+  color: #d8dee9;
+  transition: background-color 0.2s ease;
+}
+
+#custom-power:hover {
+  background-color: #3b4252;
+  color: #eceff4;
+}
+
+#custom-power > .icon {
+  color: #bf616a;
+  font-size: 16px;
 }

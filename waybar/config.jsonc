@@ -18,6 +18,7 @@
     "backlight",
     "custom/protonmail",
     "battery",
+    "custom/power",
     "tray"
   ],
   "bar_id": "bar-0",
@@ -97,12 +98,12 @@
     }
   },
   "tray": {
-    "icon-size": 20,
+    "icon-size": 30,
     "spacing": 10
   },
   "clock": {
     // "timezone": "Australia/Sydney",
-    "format": "{:%H:%M}",
+    "format": "{:%I:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%d-%m-%y}"
   },
