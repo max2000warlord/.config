@@ -25,5 +25,26 @@ require("neo-tree").setup({
     },
   },
 })
+-- Temporarily disable all formatting on save for Zig files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "zig",
+  callback = function()
+    vim.bo.formatprg = ""
+    vim.bo.formatexpr = ""
+    -- Disable format on save if you have it enabled
+    vim.g.zig_fmt_autosave = 0
+  end,
+})
 
-vim.cmd("autocmd! BufWritePost *.zig lua require('neo-tree.events').fire_event('vim_buffer_changed')")
+-- More detailed debugging
+--vim.api.nvim_create_autocmd({ "BufWritePre", "BufWritePost" }, {
+--  pattern = "*.zig",
+--  callback = function(ev)
+--    local when = ev.event == "BufWritePre" and "before" or "after"
+--    print("--- Debug: " .. when .. " save ---")
+--    print("Format program: " .. (vim.bo.formatprg or "none"))
+--    print("Format expression: " .. (vim.bo.formatexpr or "none"))
+--    -- Get shell setting
+--    print("Shell: " .. vim.o.shell)
+--  end,
+--})

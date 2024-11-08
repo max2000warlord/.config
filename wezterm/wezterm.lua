@@ -36,7 +36,7 @@ config.default_cursor_style = "BlinkingBar"
 config.animation_fps = 1
 config.font = wezterm.font("Hack Nerd Font")
 config.hide_tab_bar_if_only_one_tab = true
-config.window_background_opacity = 0.75
+config.window_background_opacity = 0.65
 config.text_background_opacity = 1.0
 config.window_close_confirmation = "NeverPrompt"
 -- and finally, return the configuration to wezterm
