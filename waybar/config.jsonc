@@ -12,13 +12,13 @@
     "custom/media",
     "idle_inhibitor",
     "pulseaudio",
+    //"network",
     "cpu",
     "memory",
     "temperature",
     "backlight",
     "custom/protonmail",
     "battery",
-    "custom/power",
     "tray"
   ],
   "bar_id": "bar-0",
@@ -141,6 +141,15 @@
     // "format-full": "",
     "format-icons": ["", "", "", "", ""]
   },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
@@ -177,5 +186,17 @@
     "interval": 10,
     "tooltip": false,
     "on-click": "proton-mail"
+  },
+  "custom/power": {
+    "format": "⏻ ",
+    "tooltip": false,
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+    "menu-actions": {
+      "shutdown": "loginctl shutdown",
+      "reboot": "loginctl reboot",
+      "suspend": "systemctl suspend",
+      "hibernate": "systemctl hibernate"
+    }
   }
 }
