@@ -16,7 +16,15 @@
   "modules": [
     {
       "type": "custom", // HardwareStart
-      "format": "\u001b[38;2;16;175;223m╭───────┤ \u001b[1;34mHardware Information\u001b[38;2;16;175;223m ├───────╮\u001b[0m"
+      "format": "\u001b[38;2;16;175;223m        ╒════════════════════╕\u001b[0m"
+    },
+    {
+      "type": "custom", // HardwareStart
+      "format": "\u001b[38;2;16;175;223m        │\u001b[1;34mHardware Information\u001b[38;2;16;175;223m│\u001b[0m"
+    },
+    {
+      "type": "custom", // HardwareStart
+      "format": "\u001b[38;2;16;175;223m        ╘════════════════════╛\u001b[0m"
     },
     {
       "type": "cpu",
@@ -42,8 +50,16 @@
       "format": "{4} [{5}]"
     },
     {
+      "type": "custom", // HardwareStart
+      "format": "\u001b[38;2;16;175;223m        ╒════════════════════╕\u001b[0m"
+    },
+    {
       "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;16;175;223m├───────┤ \u001b[1;34mSoftware Information\u001b[38;2;16;175;223m ├───────┤\u001b[0m"
+      "format": "\u001b[38;2;16;175;223m        │\u001b[1;34mSoftware Information\u001b[38;2;16;175;223m│\u001b[0m"
+    },
+    {
+      "type": "custom", // HardwareStart
+      "format": "\u001b[38;2;16;175;223m        ╘════════════════════╛\u001b[0m"
     },
     {
       "type": "title",
@@ -58,12 +74,12 @@
     },
     {
       "type": "kernel",
-      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
+      "key": "\u001b[38;2;16;175;223m \u001b[38;2;255;255;255m  󱞪 \u001b[0m",
       "format": "{2}"
     },
     {
       "type": "initsystem",
-      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
+      "key": "\u001b[38;2;16;175;223m \u001b[38;2;255;255;255m  󱞪 \u001b[0m",
       "format": "OpenRC"
     },
     {
@@ -78,7 +94,7 @@
     },
     {
       "type": "shell",
-      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m"
+      "key": "\u001b[38;2;16;175;223m \u001b[38;2;255;255;255m  󱞪 \u001b[0m"
     },
     {
       "type": "packages",
@@ -92,17 +108,17 @@
     },
     {
       "type": "wifi",
-      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
+      "key": "\u001b[38;2;16;175;223m \u001b[38;2;255;255;255m  󱞪 \u001b[0m",
       "format": "{3}"
-    },
+    }
     //{
     //  "type": "wifi",
     //  "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
     //  "format": "{9}"
     //},
-    {
-      "type": "custom", // InformationEnd
-      "format": "\u001b[38;2;16;175;223m╰──────────────────────────────────────╯\u001b[0m\n"
-    }
+    //{
+    //  "type": "custom", // InformationEnd
+    //  "format": "\u001b[38;2;16;175;223m╰──────────────────────────────────────╯\u001b[0m\n"
+    //}
   ]
 }
