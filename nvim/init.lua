@@ -35,16 +35,3 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.g.zig_fmt_autosave = 0
   end,
 })
-
--- More detailed debugging
---vim.api.nvim_create_autocmd({ "BufWritePre", "BufWritePost" }, {
---  pattern = "*.zig",
---  callback = function(ev)
---    local when = ev.event == "BufWritePre" and "before" or "after"
---    print("--- Debug: " .. when .. " save ---")
---    print("Format program: " .. (vim.bo.formatprg or "none"))
---    print("Format expression: " .. (vim.bo.formatexpr or "none"))
---    -- Get shell setting
---    print("Shell: " .. vim.o.shell)
---  end,
---})
