@@ -12,7 +12,6 @@ config.mouse_bindings = {
 		mods = "NONE",
 		action = act.SendString("woot"),
 	},
-
 	-- Change the default click behavior so that it only selects
 	-- text and doesn't open hyperlinks
 	{

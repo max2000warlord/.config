@@ -1,12 +1,11 @@
+theme = synthwave
 font-family = "Hack Nerd Font"
 font-size = 14
-cursor-color = "#AAAAAA"
 cursor-style = bar
 cursor-style-blink = true
 gtk-titlebar = false
 confirm-close-surface = false
-background-opacity = 0.8
-background = #000000
+background-opacity = 0.70
 desktop-notifications = false
 keybind = alt+shift+right=new_split:right
 keybind = alt+shift+down=new_split:down

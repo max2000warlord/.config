@@ -18,6 +18,7 @@
     "temperature",
     "backlight",
     "custom/protonmail",
+    "custom/weather",
     "battery",
     "tray"
   ],
@@ -186,6 +187,13 @@
     "interval": 10,
     "tooltip": false,
     "on-click": "proton-mail"
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Sydney",
+    "return-type": "json"
   },
   "custom/power": {
     "format": "⏻ ",
