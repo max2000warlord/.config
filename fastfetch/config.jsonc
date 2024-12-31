@@ -2,8 +2,8 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "kitty",
-    "source": "/home/max/.config/fastfetch/artix-dinit2.png",
-    "height": 17,
+    "source": "/home/max/.config/fastfetch/artix.png",
+    "height": 16,
     "padding": {
       "top": 1,
       "right": 1,
@@ -94,11 +94,6 @@
       "type": "wifi",
       "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
       "format": "{3}"
-    },
-    {
-      "type": "wifi",
-      "key": "\u001b[38;2;16;175;223m│\u001b[38;2;255;255;255m  󱞪 \u001b[0m",
-      "format": "{11}"
     },
     {
       "type": "custom", // InformationEnd
