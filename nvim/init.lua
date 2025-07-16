@@ -24,6 +24,7 @@ require("neo-tree").setup({
       },
     },
   },
+  git_status = { enable = false },
 })
 -- Temporarily disable all formatting on save for Zig files
 vim.api.nvim_create_autocmd("FileType", {
@@ -35,3 +36,4 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.g.zig_fmt_autosave = 0
   end,
 })
+vim.cmd([[colorscheme cyberdream]])
