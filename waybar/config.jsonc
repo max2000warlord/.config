@@ -209,7 +209,7 @@
   },
   "network#speed": {
     "interval": 1,
-    "format": "⬇{bandwidthDownBytes} ⬆{bandwidthUpBytes}",
+    "format": "󰜮{bandwidthDownBytes} 󰜷{bandwidthUpBytes}",
     "format-disconnected": "Disconnected",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format": "{ifname} via {gwaddr}",

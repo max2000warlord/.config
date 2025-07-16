@@ -27,6 +27,7 @@ alias fw="sudo firewall-cmd"
 alias ls="lsd -alh --color=auto"
 alias az="yazi"
 alias cmatrix='cmatrix -bC magenta && clear && fastfetch'
+alias ccc='clear && fastfetch'
 
 #######################
 ### PATH stuff etc. ###
