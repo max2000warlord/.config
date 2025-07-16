@@ -12,7 +12,7 @@
     "custom/media",
     "idle_inhibitor",
     "pulseaudio",
-    //"network",
+    "network#speed",
     "cpu",
     "memory",
     "temperature",
@@ -161,7 +161,7 @@
     "format-icons": {
       "headphone": "",
       "hands-free": "",
-      "headset": "",
+      "headset": "󱡏",
       "phone": "",
       "portable": "",
       "car": "",
@@ -206,5 +206,15 @@
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
     }
+  },
+  "network#speed": {
+    "interval": 1,
+    "format": "⬇{bandwidthDownBytes} ⬆{bandwidthUpBytes}",
+    "format-disconnected": "Disconnected",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-disconnected": "Disconnected"
   }
 }
