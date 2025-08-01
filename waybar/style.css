@@ -1,7 +1,8 @@
+@import "/home/max/.cache/wal/colors-waybar.css";
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "NotoSans Nerd Font", "Hack Nerd Font", Helvetica, Arial,
-    sans-serif;
+  font-family: "NotoSans Nerd Font", "Hack Nerd Font", "Helvetica Nerd Font",
+    "Arial Nerd Font", sans-serif;
   font-size: 18px;
 }
 
@@ -10,9 +11,9 @@
 
 window#waybar {
   /*background-color: rgba(0, 0, 0, 0.3);*/
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
   border: none;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -55,8 +56,8 @@ button:hover {
 
 #workspaces button {
   /*padding: 0 5px;*/
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  /*color:  @color6;*/
+  color: @color6;
 }
 
 #workspaces button:hover {
@@ -85,8 +86,8 @@ button:hover {
 #temperature,
 #backlight,
 #network,
-#pulseaudio,
 #wireplumber,
+#pulseaudio,
 #custom-media,
 #tray,
 #mode,
@@ -114,22 +115,19 @@ button:hover {
 
 #clock {
   font-family: "Digital Display", sans-serif;
-  /*color: rgba(16, 175, 223, 1);*/
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
+  /*color:  @color6;*/
   /*color: rgba(0, 255, 0, 1);*/
-  background-color: transparent;
   font-size: 35px;
 }
 
 #battery {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #battery.charging,
 #battery.plugged {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 @keyframes blink {
@@ -140,7 +138,6 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-  background-color: transparent;
   color: rgba(255, 0, 0, 1);
   animation-name: blink;
   animation-duration: 0.5s;
@@ -154,45 +151,35 @@ label:focus {
 }
 
 #cpu {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #memory {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #disk {
-  background-color: #964b00;
+  color: @color6;
 }
 
 #backlight {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #network {
-  background-color: #2980b9;
+  color: @color6;
 }
 
 #network.disconnected {
   background-color: #f53c3c;
 }
 
-#pulseaudio {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+#wireplumber {
+  color: @color6;
 }
 
 #pulseaudio.muted {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
-}
-
-#wireplumber {
-  background-color: #fff0f5;
-  color: #000000;
+  color: @color6;
 }
 
 #wireplumber.muted {
@@ -214,18 +201,15 @@ label:focus {
 }
 
 #temperature {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #temperature.critical {
-  background-color: transparent;
   color: rgba(255, 0, 0, 1);
 }
 
 #tray {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #tray > .passive {
@@ -238,13 +222,12 @@ label:focus {
 }
 
 #idle_inhibitor {
-  background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #idle_inhibitor.activated {
   background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 
 #mpd {
@@ -298,7 +281,7 @@ label:focus {
 
 #custom-protonmail.unread {
   background-color: transparent;
-  color: rgba(16, 175, 223, 1);
+  color: @color6;
 }
 #custom-protonmail.inaccurate {
   background-color: transparent;

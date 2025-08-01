@@ -11,7 +11,7 @@
   "modules-right": [
     "custom/media",
     "idle_inhibitor",
-    "pulseaudio",
+    "wireplumber",
     "cpu",
     "memory",
     "temperature",
@@ -23,6 +23,7 @@
   ],
   "bar_id": "bar-0",
   "ipc": true,
+  "reload_style_on_change": true,
   // Modules configuration
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -158,6 +159,13 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
+  },
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "max-volume": 100,
+    "format-icons": [" ", " ", " "]
   },
   "custom/media": {
     "format": "{icon} {}",
