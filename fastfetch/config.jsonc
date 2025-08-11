@@ -43,8 +43,7 @@
     },
     {
       "type": "display",
-      "key": "󰍹",
-      "format": "{1}×{2}"
+      "key": "󰍹"
     },
     {
       "type": "custom", // SoftwareStart
@@ -63,18 +62,19 @@
       "key": "",
       "format": "{1}@{2}"
     },
-    {
-      "type": "os",
-      "key": "\u001b[38;2;23;147;209m󰣇\u001b[0m" // Just get your distro's logo off nerdfonts.com
-    },
+    //{
+    //  "type": "os",
+    //  "key": "\u001b[38;2;23;147;209m󰣇\u001b[0m" // Just get your distro's logo off nerdfonts.com
+    //},
     {
       "type": "kernel",
-      "key": "",
+      "key": "\u001b[38;2;23;147;209m󰣇\u001b[0m",
       "format": "{2}"
     },
     {
-      "type": "de",
-      "key": ""
+      "type": "wm",
+      "key": "",
+      "format": "{2}"
     },
     {
       "type": "shell",
@@ -82,11 +82,12 @@
     },
     {
       "type": "terminal",
-      "key": ""
+      "key": "",
+      "format": "{5}"
     },
     {
       "type": "packages",
-      "key": "󰏖"
+      "key": "\u001b[38;2;255;255;0m󰮯\u001b[0m"
     },
     {
       "type": "uptime",

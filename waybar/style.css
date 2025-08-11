@@ -1,14 +1,16 @@
+@import "/home/max/.cache/wal/colors-waybar.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "NotoSans Nerd Font", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-family: "NotoSans Nerd Font", "Hack Nerd Font", "Helvetica Nerd Font", "Arial Nerd Font", sans-serif;
+    font-size: 18px;
     border-radius: 15px;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0);
-    /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.60);
+    /*border-bottom: 3px solid @color6;*/
+    color: @color6;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -26,14 +28,6 @@ window#waybar.solo {
 }
 */
 
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border-radius: 12px;
-}
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -50,14 +44,22 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#workspaces {
+    padding-left: 10px;
+}
+
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: @color6;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 255, 0, 0.2);
+    background: @color5;
+}
+
+#workspaces button.active {
+    background: @color0;
 }
 
 #workspaces button.focused {
@@ -91,14 +93,11 @@ button:hover {
 #scratchpad,
 #custom-protonmail,
 #mpd {
-    padding: 0 10px;
+    padding: 0 0px;
     color: #ffffff;
 }
 
 #window,
-#workspaces {
-    margin: 0 4px;
-}
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
@@ -112,9 +111,8 @@ button:hover {
 
 #clock {
     font-family: "Digital Dismay";
-    font-size: 50px;
-    color: #00FF00;
-    background-color: rgba(0, 0, 0, 0);
+    font-size: 34px;
+    color: @color6;
 }
 
 @keyframes blink {
@@ -125,20 +123,20 @@ button:hover {
 }
 
 label:focus {
-    background-color: #000000;
-}
-
-#cpu {
-    background-color: #2ecc71;
     color: #000000;
 }
 
+#cpu {
+  color: @color6;
+}
+
 #memory {
-    background-color: #9b59b6;
+  color: @color6;
+
 }
 
 #disk {
-    background-color: #964B00;
+  color: @color6;
 }
 
 #backlight {
@@ -154,8 +152,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+  color: @color6;
 }
 
 #pulseaudio.muted {
@@ -187,7 +184,7 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+  color: @color6;
 }
 
 #temperature.critical {
@@ -195,7 +192,6 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
 }
 
 #tray > .passive {
@@ -208,17 +204,16 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    color: @color6;
 }
 
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
-    color: #2d3436;
+    color: @color6;
 }
 
 #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+  color: @color6;
 }
 
 #mpd.disconnected {
@@ -276,4 +271,31 @@ label:focus {
 #custom-protonmail.error {
     background: #382580;
     color: darkred;
+}
+#network.speed,
+#custom-network-speed {
+  min-width: 190px;
+  background-color: transparent;
+  color: @color6;
+  padding: 0 0px;
+  margin: 0 0px;
+}
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#backlight-slider trough {
+    min-height: 80px;
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: black;
+}
+#backlight-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: red;
 }
