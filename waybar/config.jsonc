@@ -1,12 +1,14 @@
 [
   {
     "layer": "top", // Waybar at top layer
-    //"position": "top", // Waybar position (top|bottom|left|right)
+    "position": "top", // Waybar position (top|bottom|left|right)
     "margin-top": 5,
+    "margin-left": 5,
+    "margin-right": 5,
     "hidden": false,
     //"hide-on-window": true,
     "height": 35, // Waybar height (to be removed for auto height)
-    "width": 2560, // Waybar width
+    "width": "auto", // Waybar width
     "spacing": 2, // Gaps between modules (4px)
     "output": "DP-2",
     // Choose the order of the modules
