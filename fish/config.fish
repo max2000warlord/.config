@@ -43,6 +43,12 @@ set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -x LD_LIBRARY_PATH $HOME/.local/lib/arch-mojo $LD_LIBRARY_PATH
 
 # bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+#set --export BUN_INSTALL "$HOME/.bun"
+#set --export PATH $BUN_INSTALL/bin $PATH
 fish_add_path /home/max/.pixi/bin
+
+#CUDA
+set -gx CUDA_HOME /opt/cuda
+set -gx CUDA_ROOT /opt/cuda
+set -gx PATH /opt/cuda/bin $PATH
+set -x LD_LIBRARY_PATH /opt/cuda/lib64 $LD_LIBRARY_PATH

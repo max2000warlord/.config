@@ -9,7 +9,7 @@ while true; do
     LAST_WALLPAPER="$CURRENT_WALLPAPER"
 
     wal -i "$CURRENT_WALLPAPER"
-
+    echo "" >~/.cache/wal/sequences
   fi
   sleep 2
 done
