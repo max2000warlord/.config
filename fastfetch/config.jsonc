@@ -2,11 +2,11 @@
   "$schema": "/home/max/.config/fastfetch/jsonschema.json",
   "logo": {
     "type": "kitty",
-    "source": "/home/max/.config/fastfetch/arch.png",
+    "source": "/home/max/.config/fastfetch/arch-transparent.png",
     "width": 35,
     "padding": {
       "top": 1,
-      "right": 2,
+      "right": 0,
       "left": 0
     }
     //"height": 10
