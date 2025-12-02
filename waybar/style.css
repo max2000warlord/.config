@@ -1,27 +1,33 @@
-@import "/home/max/.cache/wal/colors-waybar.css";
+@import "colors.css";
 
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "NotoSans Nerd Font", "Hack Nerd Font", "Helvetica Nerd Font", "Arial Nerd Font", sans-serif;
-    font-size: 18px;
-    border-radius: 15px;
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "NotoSans Nerd Font", "Hack Nerd Font", "Helvetica Nerd Font", "Arial Nerd Font", sans-serif;
+  font-size: 18px;
+  border-radius: 15px;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.5);
-    /*border-bottom: 3px solid @color6;*/
-    color: @color6;
-    transition-property: background-color;
-    transition-duration: .5s;
+  background: linear-gradient(
+    90deg,
+    alpha(@color1, 0.5) 0%,
+    alpha(@background, 0.5) 50%,
+    alpha(@color2, 0.5) 100%
+  );
+  border: none;
+  border-radius: 30px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  color: @color4;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 /*
 window#waybar.empty {
-    background-color: transparent;
+    background-color: inherit;
 }
 window#waybar.solo {
     background-color: #FFFFFF;
@@ -30,50 +36,52 @@ window#waybar.solo {
 
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    font-size: 20px;
-    border-radius: 0;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  font-size: 20px;
+  border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+  background: inherit;
+  box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: @color6;
+  padding: 0 5px;
+  background-color: inherit;
+  color: inherit;
 }
 
 #workspaces button:hover {
-    background: @color5;
+  background: @color2;
 }
 
 #workspaces button.active {
-    background: @color0;
+  background: @color0;
+  color: inherit;
+  border-radius: 30px;
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+  background-color: #64727D;
+  box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+  background-color: #eb4d4b;
 }
 
 #mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+  background-color: #64727D;
+  border-bottom: 3px solid #ffffff;
 }
 
 #clock,
@@ -93,209 +101,221 @@ button:hover {
 #scratchpad,
 #custom-protonmail,
 #mpd {
-    padding: 0 0px;
-    color: #ffffff;
+  padding: 0 0px;
+  color: #ffffff;
 }
 
 #window,
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+.modules-left>widget:first-child>#workspaces {
+  margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+.modules-right>widget:last-child>#workspaces {
+  margin-right: 0;
 }
 
 #clock {
-    font-family: "Digital Dismay";
-    font-size: 34px;
-    color: @color6;
+  background-color: inherit;
+  margin-top: 5px;
+  font-family: "Ticking Timebomb BB";
+  font-size: 34px;
+  color: rgba(0,255,0,1);
 }
 
 @keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 label:focus {
-    color: #000000;
+  color: #000000;
 }
 
 #cpu {
-  color: @color6;
+  color: inherit;
+  padding: 5px;
 }
 
 #memory {
-  color: @color6;
+  color: inherit;
 
 }
 
 #disk {
-  color: @color6;
+  color: inherit;
 }
 
 #backlight {
-    background-color: #90b1b1;
+  background-color: #90b1b1;
 }
 
 #network {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+  background-color: #f53c3c;
 }
 
 #pulseaudio {
-  color: @color6;
+  color: inherit;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+  background-color: #90b1b1;
+  color: #2a5c45;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+  background-color: #fff0f5;
+  color: #000000;
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+  background-color: #f53c3c;
 }
 
 #custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
+  background-color: #66cc99;
+  color: #2a5c45;
+  min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-    background-color: #66cc99;
+  background-color: #66cc99;
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
+  background-color: #ffa000;
 }
 
 #temperature {
-  color: @color6;
+  color: inherit;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+  background-color: #eb4d4b;
 }
 
 #tray {
+  background-color: transparent;
+  padding-left: 45px;
+  padding-right: 15px;
 }
 
-#tray > .passive {
-    -gtk-icon-effect: dim;
+#tray>.passive {
+  -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+#tray>.needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
 }
 
 #idle_inhibitor {
-    color: @color6;
+  color: inherit;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: @color6;
+  background-color: #ecf0f1;
+  color: inherit;
 }
 
 #mpd {
-  color: @color6;
+  color: inherit;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+  background-color: #f53c3c;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+  background-color: #90b1b1;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+  background-color: #51a37a;
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+  background: #00b093;
+  color: #740864;
+  padding: 0 5px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
 #keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+  background: #97e1ad;
+  color: #000000;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
-#keyboard-state > label {
-    padding: 0 5px;
+#keyboard-state>label {
+  padding: 0 5px;
 }
 
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
+#keyboard-state>label.locked {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad {
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+  background-color: inherit;
 }
 
 #custom-protonmail.unread {
-    background: #382580;
-    color: #E2DBFF;
+  background: #382580;
+  color: #E2DBFF;
 }
+
 #custom-protonmail.inaccurate {
-    background: #382580;
-    color: darkorange;
+  background: #382580;
+  color: darkorange;
 }
+
 #custom-protonmail.error {
-    background: #382580;
-    color: darkred;
+  background: #382580;
+  color: darkred;
 }
+
 #network.speed,
 #custom-network-speed {
   min-width: 190px;
-  background-color: transparent;
-  color: @color6;
+  background-color: inherit;
+  color: inherit;
   padding: 0 0px;
   margin: 0 0px;
 }
+
 #backlight-slider slider {
-    min-height: 0px;
-    min-width: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
 }
+
 #backlight-slider trough {
-    min-height: 80px;
-    min-width: 10px;
-    border-radius: 5px;
-    background-color: black;
+  min-height: 80px;
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: black;
 }
+
 #backlight-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
-    background-color: red;
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: red;
 }

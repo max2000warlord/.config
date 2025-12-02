@@ -1,7 +1,16 @@
 return {
   {
     "stevearc/conform.nvim",
-    opts = {},
+    opts = {
+      formatters_by_ft = {
+        json = { "prettierd" },
+        jsonc = { "prettierd" },
+      },
+      -- format_on_save = {
+      --   timeout_ms = 500,
+      --   lsp_fallback = true,
+      -- },
+    },
   },
   {
     "kylechui/nvim-surround",
@@ -24,9 +33,34 @@ return {
     },
   },
   {
+    "bezhermoso/tree-sitter-ghostty",
+    build = "make nvim_install",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      -- add tsx and treesitter
+      vim.list_extend(opts.ensure_installed, {
+        "ghostty",
+        "latex",
+        "tsx",
+        "typescript",
+      })
+    end,
+  },
+  {
     "nvzone/typr",
     cmd = "TyprStats",
     dependencies = "nvzone/volt",
     opts = {},
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
+  {
+    "eandrju/cellular-automaton.nvim",
   },
 }

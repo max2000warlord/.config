@@ -12,4 +12,3 @@ keybind = alt+shift+right=new_split:right
 keybind = alt+shift+down=new_split:down
 window-padding-x = 0
 window-padding-y = 0
-keybind = shift+enter=text:\x1b\r

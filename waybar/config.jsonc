@@ -36,9 +36,9 @@
     "bar_id": "bar-0",
     "ipc": true,
     "reload_style_on_change": true,
-    // Modules configuration
     "hyprland/workspaces": {
       "disable-scroll": true,
+      "active-only": false,
       "all-outputs": false,
       "warp-on-scroll": false,
       "format": "{icon}",
@@ -56,6 +56,20 @@
         "urgent": "",
         "focused": "",
         "default": ""
+      },
+      "persistent-workspaces": {
+        "DP-2": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     "keyboard-state": {

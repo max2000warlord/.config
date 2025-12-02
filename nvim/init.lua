@@ -5,6 +5,9 @@ require("neo-tree").setup({
     position = "right", -- Set Neo-tree to open on the right
   },
   filesystem = {
+    follow_current_file = {
+      enabled = true,
+    },
     filtered_items = {
       hide_dotfiles = false, -- Show dotfiles by default
       hide_gitignored = false, -- Show gitignored files if desired

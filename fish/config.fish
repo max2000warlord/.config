@@ -1,9 +1,10 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-sleep 0.075 && fastfetch
+#fastfetch
 set fish_greeting
 zoxide init fish | source
+fastfetch
 
 ###################
 ###   ALIASES   ###
@@ -19,7 +20,8 @@ alias qqq='reboot'
 alias sshh='eval (ssh-agent -c) && ssh-add ~/.ssh/id_ed25519'
 alias nv='nvim'
 alias xc='hyprctl dispatch exec'
-alias ls='lsd -lah'
+alias ls='lsd -lAh'
+alias man='batman'
 
 ### Pacman/Paru stuff ###
 alias zxc='sudo pacman -S'
@@ -52,3 +54,4 @@ set -gx CUDA_HOME /opt/cuda
 set -gx CUDA_ROOT /opt/cuda
 set -gx PATH /opt/cuda/bin $PATH
 set -x LD_LIBRARY_PATH /opt/cuda/lib64 $LD_LIBRARY_PATH
+set -x GPG_TTY (tty)
