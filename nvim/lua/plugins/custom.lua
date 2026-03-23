@@ -13,6 +13,25 @@ return {
     },
   },
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        bashls = {
+          filetypes = { "sh", "bash" },
+        },
+        lua_ls = {
+          settings = {
+            Lua = {
+              diagnostics = {
+                globals = { "vim" },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
