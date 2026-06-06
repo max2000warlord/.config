@@ -1,0 +1,7 @@
+@theme "./themes/sidebar-v2.rasi"
+configuration {
+  modi: "window,drun,ssh,combi";
+  matching: "normal";
+  sort: true;
+  sorting-method: "fzf";
+}
