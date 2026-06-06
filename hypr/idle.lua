@@ -1,0 +1,12 @@
+-- hl.general.lock_cmd = "notify-send 'lock!'" -- dbus/sysd lock command (loginctl lock-session)
+-- hl.general.unlock_cmd = "notify-send 'unlock!'" -- same as above, but unlock
+-- hl.general.before_sleep_cmd = "notify-send 'Zzz'" -- command ran before sleep
+-- hl.general.after_sleep_cmd = "notify-send 'Awake!'" -- command ran after sleep
+-- hl.general.ignore_dbus_inhibit = false -- whether to ignore dbus-sent idle-inhibit requests (used by e.g. firefox or steam)
+-- hl.general.ignore_systemd_inhibit = false -- whether to ignore systemd-inhibit --what=idle inhibitors
+--
+-- hl.listener[1] = {
+-- 	timeout = 500,
+-- 	on_timeout = "notify-send 'You are idle!'",
+-- 	on_resume = "notify-send 'Welcome back!'",
+-- }

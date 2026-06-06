@@ -1,31 +1,20 @@
-/* CSS variables for Waybar
- * You can add it to wallust.toml with:
-
-waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
-
- * And then in you waybar 'style.css' file, import it with:
-
-@import url("colors.css");
- */
-
-@define-color cursor #B87CB0;
-@define-color background #2A201D;
-@define-color foreground #B6A8AA;
-@define-color color0  #3D3B40;
-@define-color color1  #2F050D;
-@define-color color2  #382C7C;
-@define-color color3  #775A52;
-@define-color color4  #537BA1;
-@define-color color5  #BA51B5;
-@define-color color6  #CFAA84;
-@define-color color7  #8E7A7E;
-@define-color color8  #645558;
-@define-color color9  #2F050D;
-@define-color color10 #382C7C;
-@define-color color11 #775A52;
-@define-color color12 #537BA1;
-@define-color color13 #BA51B5;
-@define-color color14 #CFAA84;
-@define-color color15 #8E7A7E;
-
-
+@define-color source_color #15dab0;
+@define-color cursor     #9decd1;
+@define-color background #0f1512;
+@define-color foreground #ffffff;
+@define-color color0     #0f1512;
+@define-color color1     #ffd2cc;
+@define-color color2     #c8e2d7;
+@define-color color3     #bee1f8;
+@define-color color4     #9decd1;
+@define-color color5     #519f87;
+@define-color color6     #7d968c;
+@define-color color7     #d5dfd9;
+@define-color color8     #3f4945;
+@define-color color9     #ff5449;
+@define-color color10    #cee9dd;
+@define-color color11    #c4e7ff;
+@define-color color12    #a3f2d7;
+@define-color color13    #87d6bc;
+@define-color color14    #7395aa;
+@define-color color15    #ffffff;

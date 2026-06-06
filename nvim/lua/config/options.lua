@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.relativenumber = true
 vim.g.neovide_opacity = 0.5
+vim.opt.clipboard = "unnamedplus"
