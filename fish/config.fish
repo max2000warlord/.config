@@ -18,6 +18,7 @@ fastfetch
 alias az='yazi'
 alias cat='bat'
 alias doom='~/.emacs.d/bin/doom'
+alias xe='chmod +x'
 alias exe='sudo chmod +x'
 alias fss='source ~/.config/fish/config.fish'
 alias gc='gix clone'

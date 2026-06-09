@@ -2,42 +2,25 @@ return {
   {
     "nvimdev/dashboard-nvim",
     lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
+    dependencies = { "3rd/image.nvim" },
     opts = function()
       local logo = [[
- █████╗ ██████╗  ██████╗██╗  ██╗
-██╔══██╗██╔══██╗██╔════╝██║  ██║
-███████║██████╔╝██║     ███████║
-██╔══██║██╔══██╗██║     ██╔══██║
-██║  ██║██║  ██║╚██████╗██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
-▄
-▟█▙
-▟███▙
-▟█████▙
-▟███████▙
-▂▔▀▜██████▙
-▟██▅▂▝▜█████▙
-▟█████████████▙
-▟███████████████▙
-▟█████████████████▙
-▟███████████████████▙
-▟█████████▛▀▀▜████████▙
-▟████████▛      ▜███████▙
-▟█████████        ████████▙
-▟██████████        █████▆▅▄▃▂
-▟██████████▛        ▜█████████▙
-▟██████▀▀▀              ▀▀██████▙
-▟███▀▘                       ▝▀███▙
-▟▛▀                               ▀▜▙
-██████╗ ████████╗██╗    ██╗
-██╔══██╗╚══██╔══╝██║    ██║
-██████╔╝   ██║   ██║ █╗ ██║
-██╔══██╗   ██║   ██║███╗██║
-██████╔╝   ██║   ╚███╔███╔╝
-╚═════╝    ╚═╝    ╚══╝╚══╝ 
-]]
 
-      logo = string.rep("\n", 7) .. logo .. "\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+      ]]
+
+      logo = string.rep("\n", 15) .. logo .. "\n\n"
 
       local opts = {
         theme = "doom",
@@ -85,7 +68,43 @@ return {
           end,
         })
       end
+      vim.api.nvim_create_autocmd("User", {
+        pattern = "DashboardLoaded",
+        callback = function()
+          local ok, image_api = pcall(require, "image")
+          if not ok then
+            return
+          end
 
+          local function render_centered_image(image_path)
+            local win = vim.api.nvim_get_current_win()
+            local win_width = vim.api.nvim_win_get_width(win)
+            local term_size_px = require("image.utils.term").get_size()
+            local cell_width = term_size_px.cell_width
+            local img_width_cells = math.floor(3840 / cell_width)
+            local center_x = math.floor((win_width - img_width_cells) / 2)
+            image_api
+              .from_file(image_path, {
+                window = win,
+                buffer = vim.api.nvim_get_current_buf(),
+                x = center_x,
+                y = 10,
+                with_virtual_padding = false,
+              })
+              :render()
+          end
+
+          image_api.clear()
+          vim.defer_fn(function()
+            render_centered_image(vim.fn.stdpath("config") .. "/media/you-died-fg.png")
+          end, 100)
+
+          -- image_api.clear()
+          -- vim.defer_fn(function()
+          --   render_centered_image(vim.fn.stdpath("config") .. "/media/cachyos.png", 15)
+          -- end, 100)
+        end,
+      })
       return opts
     end,
   },

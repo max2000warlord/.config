@@ -54,10 +54,24 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	match = {
+		class = "zen",
+		title = "Library",
+	},
+	float = true,
+})
+
+hl.window_rule({
 	match = { class = "waypaper" },
 	float = true,
 	size = "1000 1000",
 })
+
+--hl.window_rule({
+--	workspace = "9 silent",
+--	monitor = "HDMI-A-2",
+--	match = { initial_class = "gamescope" },
+--})
 
 local float = {
 	"1password",
@@ -99,7 +113,6 @@ for _, nb in ipairs(noborders) do
 		match = { class = nb },
 	})
 end
-
 local noshadows = { "waybar", "com.mitchellh.ghostty", "neovide" }
 
 for _, nsh in ipairs(noshadows) do
@@ -122,5 +135,5 @@ for i = 1, 9 do
 	hl.workspace_rule({ workspace = tostring(i), monitor = "DP-2" })
 end
 
-hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-3" })
 hl.workspace_rule({ workspace = "11", monitor = "HDMI-A-2" })
+hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-3" })

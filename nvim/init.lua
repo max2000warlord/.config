@@ -28,4 +28,4 @@ require("neo-tree").setup({
     },
   },
 })
-vim.cmd([[colorscheme cyberdream]])
+-- vim.cmd([[colorscheme cyberdream]])

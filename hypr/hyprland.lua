@@ -16,7 +16,7 @@ hl.monitor({
 	position = "auto-right",
 	scale = 1.5,
 	bitdepth = 10,
-	cm = "srgb",
+	cm = "hdredid",
 	supports_hdr = true,
 	supports_wide_color = true,
 	sdrbrightness = 1.2,
@@ -27,9 +27,6 @@ hl.monitor({
 	max_luminance = 500,
 	max_avg_luminance = 350,
 })
-
---hl.set("render:cm_auto_hdr", true)
---hl.set("render:cm_fs_passthrough", 2)
 
 hl.monitor({
 	output = "HDMI-A-3",
@@ -44,6 +41,17 @@ hl.monitor({
 	mode = "3840x2160@60",
 	position = "auto-left",
 	scale = "1.5",
+	bitdepth = 10,
+	cm = "hdredid",
+	supports_hdr = true,
+	supports_wide_color = true,
+	sdrbrightness = 1.2,
+	sdrsaturation = 0.98,
+	sdr_min_luminance = 0.05,
+	sdr_max_luminance = 200,
+	min_luminance = 0.05,
+	max_luminance = 500,
+	max_avg_luminance = 220,
 	disabled = false,
 })
 

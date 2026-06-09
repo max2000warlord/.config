@@ -1,0 +1,116 @@
+* {
+    background-color: {{colors.surface_container.dark.rgba | set_alpha: 0.85}};
+    highlight:     bold {{colors.on_surface.dark.hex}};
+}
+window {
+    background-color: {{colors.surface_container.dark.rgba | set_alpha: 0.85}};
+    border-radius: 0 15mm 15mm 0;
+
+    padding: 10mm;
+
+    height: 90%;
+    width: 125mm;
+    border: 3px 3px 3px 0;
+    border-color: {{colors.source_color.dark.hex}};
+    text-color: {{colors.on_surface.dark.hex}};
+
+    location: west;
+    anchor:   west;
+}
+inputbar {
+    background-color: transparent;
+    text-color:       {{colors.on_surface_variant.dark.hex}};
+    children: [prompt, entry, textbox-end];
+    spacing: 1mm;
+}
+prompt {
+  border-radius: 5mm 0mm 0mm 5mm;
+  width: 15mm;
+}
+textbox-end {
+  border-radius: 0mm 5mm 5mm 0mm;
+  width: 15mm;
+  expand: false;
+}
+entry {
+  background-color: {{colors.surface_variant.dark.hex}};
+}
+prompt, entry, textbox-end, num-filtered-rows {
+  background-color: {{colors.surface_bright.dark.hex}};
+  text-color: inherit;
+  padding: 2mm;
+  vertical-align: 0.5;
+}
+element {
+    border-radius: 5mm;
+    children: [element-icon];
+}
+textbox-current-entry {
+    border-radius: 5mm;
+    background-color: {{colors.primary_container.dark.hex}};
+    text-color: {{colors.on_primary_container.dark.hex}};
+    placeholder: "n/a";
+    padding: 2mm;
+    horizontal-align: 0.5;
+  }
+element-icon {
+  expand: true;
+  size: 10mm;
+  vertial-align: 0.5;
+  horizontal-align: 0.5;
+  padding: 2mm;
+}
+mainbox {
+    expand: true;
+    background-color: transparent;
+    spacing:  5mm;
+    children: [
+                inputbar,
+                listview,
+                icon-current-entry,
+                textbox-current-entry
+    ];
+}
+icon-current-entry {
+    size: 50mm;
+  }
+listview {
+    padding: 0em;
+    dynamic: false;
+    lines: 0;
+    columns: 8;
+    flow: horizontal;
+}
+element selected  normal {
+    background-color: {{colors.primary.dark.hex}};
+    text-color: {{colors.on_primary.dark.hex}};
+}
+element normal active {
+    text-color: {{colors.tertiary.dark.hex}};
+}
+element normal urgent {
+    text-color: {{colors.error.dark.hex}};
+}
+element alternate normal {
+}
+element alternate active {
+    text-color: {{colors.tertiary.dark.hex}};
+}
+element alternate urgent {
+    text-color: {{colors.error_container.dark.hex}};
+}
+element selected active {
+    background-color: {{colors.tertiary_container.dark.hex}};
+    text-color: {{colors.on_tertiary_container.dark.hex}};
+}
+element selected urgent {
+    background-color: {{colors.error_container.dark.hex}};
+    text-color: {{colors.on_error_container.dark.hex}};
+}
+error-message {
+    expand: true;
+    background-color: {{colors.error_container.dark.hex}};
+    border-color: {{colors.error.dark.hex}};
+    border: 2px;
+    padding: 1em;
+}
