@@ -16,7 +16,7 @@ hl.monitor({
 	position = "auto-right",
 	scale = 1.5,
 	bitdepth = 10,
-	cm = "hdredid",
+	cm = "srgb",
 	supports_hdr = true,
 	supports_wide_color = true,
 	sdrbrightness = 1.2,
@@ -31,9 +31,10 @@ hl.monitor({
 hl.monitor({
 	output = "HDMI-A-3",
 	mode = "preferred",
-	position = "-1920x0",
+	position = "0x0",
 	scale = "1",
 	cm = "auto",
+	disabled = false,
 })
 
 hl.monitor({

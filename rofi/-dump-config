@@ -1,0 +1,59 @@
+[Timings]: 0.000000 (0.000000): Started
+[Timings]: 0.000013 (0.000013): ../rofi/source/rofi.c:main:1012 
+[default]: Parsing string: 'configuration {
+
+    // Timeout from user input.
+    timeout {
+        // The delay after inactivity to execute action.
+        delay: 0;
+        // The action to execute once the delay expires.
+        action: "kb-cancel";
+    }
+
+    // File browser mode.
+    filebrowser {
+        sorting-method:    "name";
+        directories-first: true;
+    }
+}
+
+@theme "default"
+'
+[Timings]: 0.000209 (0.000196): ../rofi/source/rofi.c:main:1062 
+[Timings]: 0.000229 (0.000020): ../rofi/source/rofi.c:main:1092 Setup Locale
+[Rofi]: Parse plugin path: /usr/lib/rofi
+[Rofi]: Looking into: /usr/lib/rofi for plugins
+[Timings]: 0.000237 (0.000008): ../rofi/source/rofi.c:main:1094 Collect MODES
+[Timings]: 0.000239 (0.000002): ../rofi/source/rofi.c:main:1096 Setup MODES
+[Timings]: 0.000242 (0.000003): ../rofi/source/rofi.c:main:1100 Setup mainloop
+[Timings]: 0.000293 (0.000051): ../rofi/source/rofi.c:main:1103 NK Bindings
+[Timings]: 0.000299 (0.000006): ../rofi/source/rofi.c:main:1107 Setup abe
+[Rofi]: Look for default config file: /etc/xdg/rofi.rasi
+[Rofi]: Look for default config file: /etc/rofi.rasi
+[Helper]: Opening theme, testing: /home/max/.config/rofi/config.rasi
+
+[Helper]: Opening theme, path is absolute: /home/max/.config/rofi/config.rasi
+[GLib-GIO]: _g_io_module_get_default: Found default implementation gvfs (GDaemonVfs) for ‘gio-vfs’
+[Helper]: Opening theme, testing: /home/max/.config/rofi/config.rasi
+
+[Helper]: Opening theme, path is absolute: /home/max/.config/rofi/config.rasi
+[default]: Parsing top file: '/home/max/.config/rofi/config.rasi'
+[Helper]: Opening theme, testing: ./themes/sidebar-v2.rasi
+
+[Helper]: Opening theme, check in dir where file is included: /home/max/.config/rofi/./themes/sidebar-v2.rasi
+[XrmOptions]: str: "configuration { show: drun;}"
+
+[default]: Parsing string: 'configuration { show: drun;}'
+[Parser]: Failed to parse theme:
+<big><b>Error while parsing theme:</b></big> <i>configuration { show: drun;}</i>
+	Parser error: <span size="smaller" style="italic">syntax error, unexpected invalid property value</span>
+	Location:     line 1 column 22 to line 1 column 34
+
+[XrmOptions]: str: "configuration { show: "drun";}"
+
+[default]: Parsing string: 'configuration { show: "drun";}'
+[XrmOptions]: Option: show is not found.
+[XrmOptions]: Adding option: show to backup list.
+[Timings]: 0.001580 (0.001281): ../rofi/source/rofi.c:main:1178 Load cmd config 
+[Timings]: 0.001585 (0.000005): ../rofi/source/rofi.c:main:1200 Setup Modes
+[Timings]: 0.001670 (0.000000): Stopped

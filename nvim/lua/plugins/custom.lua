@@ -69,16 +69,6 @@ return {
     end,
   },
   {
-    "scottmckendry/cyberdream.nvim",
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
-  },
-  {
     "bezhermoso/tree-sitter-ghostty",
     build = "make nvim_install",
   },
@@ -225,5 +215,13 @@ return {
     "cephei8/odin.nvim",
     lazy = false,
     opts = {},
+  },
+  {
+    "shortcuts/no-neck-pain.nvim",
+    opts = {},
+  -- stylua: ignore
+  keys = {
+    { "<leader>uN", "<cmd>NoNeckPain<cr>", desc = "No Neck Pain" },
+  },
   },
 }

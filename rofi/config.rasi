@@ -1,5 +1,9 @@
 @theme "./themes/sidebar-v2.rasi"
 configuration {
+  hover-select: true;
+  me-select-entry: "";
+  me-accept-entry: "!MousePrimary";
+  kb-cancel: "MousePrimary";
   modi: "window,drun,ssh,combi";
   matching: "normal";
   sort: true;

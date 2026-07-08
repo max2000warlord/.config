@@ -6,7 +6,7 @@ set fish_greeting
 set fish_key_bindings fish_default_key_bindings
 set -U tide_left_prompt_prefix \ue0c2
 set -U tide_left_prompt_suffix \ue0c0
-set -U tide_os_icon \ue61e
+set -U tide_os_icon \uf400
 set -U tide_pwd_bg_color 1DB954
 set -U tide_left_prompt_separator_diff_color \ue0c0
 zoxide init fish | source
@@ -25,6 +25,7 @@ alias gc='gix clone'
 alias klar='clear && freshfetch'
 alias qqq='reboot'
 alias sshh='eval (ssh-agent -c) && ssh-add ~/.ssh/id_ed25519'
+alias vim='nvim'
 alias nv='nvim'
 alias ls='lsd -lAh'
 alias man='batman'
@@ -41,13 +42,14 @@ alias asc='paru -Sua'
 alias ctl='sudo systemctl'
 alias sss='clear && source ~/.config/fish/config.fish'
 alias ccc='clear && fastfetch'
-alias sshh='eval (ssh-agent -c) && ssh-add ~/.ssh/id_ed25519'
 alias yay='paru'
+alias kdeconnectd='QT_QPA_PLATFORM=xcb /usr/bin/kdeconnectd'
 
 ##################
 ### PATH stuff ###
 ##################
 set -gx PATH ~/.local/bin $PATH
+set -gx PATH ~/.bun/bin $PATH
 set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -x LD_LIBRARY_PATH $HOME/.local/lib/arch-mojo $LD_LIBRARY_PATH
 fish_add_path /opt/fil/bin

@@ -1,0 +1,36 @@
+:root {
+    --millennium-source-color:             {{ colors.source_color.dark.hex }};
+    --millennium-background:               {{ colors.background.dark.hex }};
+    --millennium-on-background:            {{ colors.on_background.dark.hex }};
+    --millennium-surface:                  {{ colors.surface.dark.hex }};
+    --millennium-surface-variant:          {{ colors.surface_variant.dark.hex }};
+    --millennium-on-surface:               {{ colors.on_surface.dark.hex }};
+    --millennium-on-surface-variant:       {{ colors.on_surface_variant.dark.hex }};
+    --millennium-primary:                  {{ colors.primary.dark.hex }};
+    --millennium-on-primary:               {{ colors.on_primary.dark.hex }};
+    --millennium-primary-container:        {{ colors.primary_container.dark.hex }};
+    --millennium-on-primary-container:     {{ colors.on_primary_container.dark.hex }};
+    --millennium-primary-fixed:            {{ colors.primary_fixed.dark.hex }};
+    --millennium-primary-fixed-dim:        {{ colors.primary_fixed_dim.dark.hex }};
+    --millennium-secondary:                {{ colors.secondary.dark.hex }};
+    --millennium-on-secondary:             {{ colors.on_secondary.dark.hex }};
+    --millennium-secondary-container:      {{ colors.secondary_container.dark.hex }};
+    --millennium-on-secondary-container:   {{ colors.on_secondary_container.dark.hex }};
+    --millennium-secondary-fixed:          {{ colors.secondary_fixed.dark.hex }};
+    --millennium-tertiary:                 {{ colors.tertiary.dark.hex }};
+    --millennium-on-tertiary:              {{ colors.on_tertiary.dark.hex }};
+    --millennium-tertiary-container:       {{ colors.tertiary_container.dark.hex }};
+    --millennium-on-tertiary-container:    {{ colors.on_tertiary_container.dark.hex }};
+    --millennium-tertiary-fixed:           {{ colors.tertiary_fixed.dark.hex }};
+    --millennium-error:                    {{ colors.error.dark.hex }};
+    --millennium-on-error:                 {{ colors.on_error.dark.hex }};
+    --millennium-error-container:          {{ colors.error_container.dark.hex }};
+    --millennium-on-error-container:       {{ colors.on_error_container.dark.hex }};
+    --millennium-outline:                  {{ colors.outline.dark.hex }};
+    --millennium-outline-variant:          {{ colors.outline_variant.dark.hex }};
+    --millennium-inverse-surface:          {{ colors.inverse_surface.dark.hex }};
+    --millennium-inverse-on-surface:       {{ colors.inverse_on_surface.dark.hex }};
+    --millennium-inverse-primary:          {{ colors.inverse_primary.dark.hex }};
+    --millennium-shadow:                   {{ colors.shadow.dark.hex }};
+    --millennium-scrim:                    {{ colors.scrim.dark.hex }};
+}

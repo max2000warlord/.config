@@ -8,12 +8,13 @@
 }
 
 window#waybar {
-  background:linear-gradient(90deg,
+  /*background:linear-gradient(90deg,
     alpha(@background, 0.5) 0%,
     alpha(@color8, 0.5) 38%,
     alpha(@color8, 0.5) 62%,
     alpha(@background, 0.5) 100%
-  );
+  );*/
+  background: alpha(@background, 0.5);
   border: none;
   border-radius: 30px;
   transition-property: background-color;

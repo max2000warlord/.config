@@ -1,141 +1,105 @@
 local colors = {
-    image = "/home/max/Pictures/Wallpaper/vidya/elden-ring.jpg",
+    image = "/home/max/Pictures/Wallpaper/space/carina-nebula.png",
 
-    background = "#18120c",
-
-    blue = "#e2d6ff",
-
-    blue_container = "#9788c5",
-
-    blue_source = "#0000ff",
-
-    blue_value = "#0000ff",
+    background = "#121318",
 
     error = "#ffd2cc",
 
     error_container = "#ff5449",
 
-    green = "#cde699",
+    inverse_on_surface = "#282a2f",
 
-    green_container = "#829954",
+    inverse_primary = "#2f4779",
 
-    green_source = "#00ff00",
+    inverse_surface = "#e2e2e9",
 
-    green_value = "#00ff00",
-
-    inverse_on_surface = "#302921",
-
-    inverse_primary = "#654000",
-
-    inverse_surface = "#ede0d4",
-
-    on_background = "#ede0d4",
-
-    on_blue = "#2a1b52",
-
-    on_blue_container = "#000000",
+    on_background = "#e2e2e9",
 
     on_error = "#540003",
 
     on_error_container = "#000000",
 
-    on_green = "#1c2a00",
-
-    on_green_container = "#000000",
-
-    on_primary = "#372100",
+    on_primary = "#052355",
 
     on_primary_container = "#000000",
 
-    on_primary_fixed = "#1c0e00",
+    on_primary_fixed = "#000f30",
 
-    on_primary_fixed_variant = "#4e3000",
+    on_primary_fixed_variant = "#1b3466",
 
-    on_red = "#461700",
-
-    on_red_container = "#000000",
-
-    on_secondary = "#33230d",
+    on_secondary = "#1f2536",
 
     on_secondary_container = "#000000",
 
-    on_secondary_fixed = "#1c0e00",
+    on_secondary_fixed = "#0a1121",
 
-    on_secondary_fixed_variant = "#45331c",
+    on_secondary_fixed_variant = "#2f3648",
 
     on_surface = "#ffffff",
 
-    on_surface_variant = "#eadaca",
+    on_surface_variant = "#dbdce6",
 
-    on_tertiary = "#1b2a0a",
+    on_tertiary = "#351d37",
 
     on_tertiary_container = "#000000",
 
-    on_tertiary_fixed = "#081400",
+    on_tertiary_fixed = "#1e0821",
 
-    on_tertiary_fixed_variant = "#2b3b1a",
+    on_tertiary_fixed_variant = "#472d48",
 
-    outline = "#beafa0",
+    outline = "#b0b1bb",
 
-    outline_variant = "#9c8e80",
+    outline_variant = "#8e9099",
 
-    primary = "#ffd5a3",
+    primary = "#d0dcff",
 
-    primary_container = "#ba8740",
+    primary_container = "#7990c7",
 
-    primary_fixed = "#ffddb5",
+    primary_fixed = "#d9e2ff",
 
-    primary_fixed_dim = "#f6bc70",
-
-    red = "#ffd3c1",
-
-    red_container = "#ca7e5b",
-
-    red_source = "#ff0000",
-
-    red_value = "#ff0000",
+    primary_fixed_dim = "#b0c6ff",
 
     scrim = "#000000",
 
-    secondary = "#f5d8b6",
+    secondary = "#d5dcf3",
 
-    secondary_container = "#a58d6f",
+    secondary_container = "#8a90a5",
 
-    secondary_fixed = "#fbdebc",
+    secondary_fixed = "#dce2f9",
 
-    secondary_fixed_dim = "#dec2a2",
+    secondary_fixed_dim = "#bfc6dc",
 
     shadow = "#000000",
 
-    source_color = "#f0aa46",
+    source_color = "#0d4294",
 
-    surface = "#18120c",
+    surface = "#121318",
 
-    surface_bright = "#4b433a",
+    surface_bright = "#43444a",
 
-    surface_container = "#2d271f",
+    surface_container = "#26282d",
 
-    surface_container_high = "#393129",
+    surface_container_high = "#313238",
 
-    surface_container_highest = "#443c34",
+    surface_container_highest = "#3c3d43",
 
-    surface_container_low = "#231d15",
+    surface_container_low = "#1c1d23",
 
-    surface_container_lowest = "#0b0703",
+    surface_container_lowest = "#06070c",
 
-    surface_dim = "#18120c",
+    surface_dim = "#121318",
 
-    surface_tint = "#f6bc70",
+    surface_tint = "#b0c6ff",
 
-    surface_variant = "#4f4539",
+    surface_variant = "#44464f",
 
-    tertiary = "#cfe3b4",
+    tertiary = "#f6d1f4",
 
-    tertiary_container = "#84976d",
+    tertiary_container = "#a786a6",
 
-    tertiary_fixed = "#d5e9ba",
+    tertiary_fixed = "#fdd7fa",
 
-    tertiary_fixed_dim = "#bacd9f",
+    tertiary_fixed_dim = "#e0bbde",
 
 }
 

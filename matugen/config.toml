@@ -33,10 +33,10 @@ block_postfix = "*>"
 # -1 represents minimum contrast, 0 represents standard (i.e. the design as spec'd),
 # and 1 represents maximum contrast.
 contrast = 0.5
-[templates.ghostty]
-input_path = "~/.config/matugen/templates/ghostty"
-output_path = '~/.config/ghostty/themes/Matugen'
-post_hook = 'pkill -SIGUSR2 ghostty'
+#[templates.ghostty]
+#input_path = "~/.config/matugen/templates/ghostty"
+#output_path = '~/.config/ghostty/themes/Matugen'
+#post_hook = 'pkill -SIGUSR2 ghostty'
 
 [templates.nvim]
 input_path = "~/!conf/matugen/templates/nvim.jsonc"
@@ -49,6 +49,11 @@ output_path = "~/.config/hypr/colors.lua"
 [templates.spotify-player]
 input_path = "~/.config/matugen/templates/spotify-player.toml"
 output_path = "~/.config/spotify-player/theme.toml"
+
+#[templates.steam]
+#input_path = "~/.config/matugen/templates/steam."
+#output_path = '~/.config/AdwSteamGtk/custom.css'
+#post_hook = 'adwaita-steam-gtk -i'
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
@@ -133,7 +138,7 @@ expr_postfix = "}}"
 
 # If you don't want to use the other colors that are automatically generated (on_color, on_color_container) you can just import a custom json with the colors instead.
 # For an example of importing json see: https://iniox.github.io/#matugen/usage/importing-json
-[config.custom_colors]
-red = "#ff0000"
-blue = "#0000ff"
-green = "#00ff00"
+# [config.custom_colors]
+# red = "#ff0000"
+# blue = "#0000ff"
+# green = "#00ff00"

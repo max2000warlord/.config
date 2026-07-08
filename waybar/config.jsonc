@@ -17,7 +17,8 @@
       "hyprland/workspaces",
       "hyprland/mode",
       "custom/media",
-      "hyprland/submap"
+      "hyprland/submap",
+      "custom/rofi"
     ],
     "modules-center": [
       "network#ulSpeed",
@@ -252,12 +253,10 @@
     //  "format": "{icon} {percent}%",
     //  "format-icons": ["", "", "", "", "", "", "", "", ""]
     //},
-    "custom/protonmail": {
-      "exec": "bar-protonmail",
-      "return-type": "json",
-      "interval": 10,
+    "custom/rofi": {
       "tooltip": false,
-      "on-click": "proton-mail"
+      "format": "",
+      "on-click": "rofi -show drun"
     },
     "hyprland/submap": {
       "format": "✌️ {}",

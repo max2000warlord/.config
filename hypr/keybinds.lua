@@ -27,7 +27,7 @@ hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(term))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(logout))
 hl.bind(mainMod .. " + M", hl.dsp.exit())
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(browser))
--- hl.bind(mainMod .. "F", hl.dsp.fullscreen())
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 -- hl.bind(mainMod .. "S", hl.dsp.exec_cmd("signal-desktop"))
 hl.bind(comboMod .. " + Q", hl.dsp.window.close())
 hl.bind(

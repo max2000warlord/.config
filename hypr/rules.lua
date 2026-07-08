@@ -62,6 +62,14 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	match = {
+		title = "Steam Settings",
+	},
+	float = true,
+	size = "monitor_w*0.4 monitor_h*0.4",
+})
+
+hl.window_rule({
 	match = { class = "waypaper" },
 	float = true,
 	size = "1000 1000",
@@ -137,3 +145,8 @@ end
 
 hl.workspace_rule({ workspace = "11", monitor = "HDMI-A-2" })
 hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-3" })
+
+hl.layer_rule({
+	match = { namespace = "rofi" },
+	ignore_alpha = 0,
+})

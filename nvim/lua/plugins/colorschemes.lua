@@ -23,4 +23,30 @@ return {
       })
     end,
   },
+  {
+    "scottmckendry/cyberdream.nvim",
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
+  },
+  {
+    "Ferouk/bearded-nvim",
+    name = "bearded",
+    priority = 1000,
+    build = function()
+      -- Generate helptags so :h bearded-theme works
+      local doc = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy", "bearded", "doc")
+      pcall(vim.cmd, "helptags " .. doc)
+    end,
+    config = function()
+      require("bearded").setup({
+        flavor = "arc", -- any flavor slug
+        transparent = false,
+      })
+    end,
+  },
 }
