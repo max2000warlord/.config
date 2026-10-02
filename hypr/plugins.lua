@@ -16,6 +16,7 @@ if hl.plugin.hyprglass then
 	-- Layer surfaces: each call whitelists the namespace and configures it
 	-- hg.layer("waybar", { preset = "subtle", mask_threshold = 0.05 })
 	hg.layer("ghostty", { preset = "subtle", mask_threshold = 0.05 })
+	hg.layer("moonfin", { preset = "subtle", mask_threshold = 0.05 })
 	hg.layer("neovide", { preset = "subtle", mask_threshold = 0.05 })
 	hg.layer("rofi", { preset = "subtle", mask_threshold = 0.05 })
 	hg.layer("quickshell:bezel", { preset = "ui", mask_threshold = 0.3 })

@@ -32,6 +32,14 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	match = {
+		class = "cool-retro-term",
+		title = "Settings",
+	},
+	float = true,
+})
+
+hl.window_rule({
 	match = { title = "Volume Control" },
 	float = true,
 })
@@ -42,15 +50,20 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	match = { title = "Fallout: London - Installer" },
+	float = true,
+})
+
+hl.window_rule({
 	match = { class = "org.pulseaudio.pavucontrol" },
 	float = true,
-	size = "monitor_w*0.4 monitor_h*0.3",
+	-- size = "monitor_w*0.4 monitor_h*0.4",
 })
 
 hl.window_rule({
 	match = { class = "blueman-manager" },
 	float = true,
-	size = "monitor_w*0.4 monitor_h*0.4",
+	-- size = "monitor_w*0.4 monitor_h*0.4",
 })
 
 hl.window_rule({
@@ -82,7 +95,8 @@ hl.window_rule({
 --})
 
 local float = {
-	"1password",
+	"com.onepassword.OnePassword",
+	"org.openrgb.OpenRGB",
 	"Grub-customizer",
 	"kdeconnect.app",
 	"xfce-polkit",
@@ -90,6 +104,7 @@ local float = {
 	"org.cachyos.hello",
 	"sddm-conf",
 	"solaar",
+	"stacer",
 	"swayimg",
 }
 
@@ -113,7 +128,7 @@ hl.window_rule({
 })
 
 -- No border: Ghostty, Neovide, GLava
-local noborders = { "com.mitchellh.ghostty", "neovide" }
+local noborders = { "com.mitchellh.ghostty", "cool-retro-term", "neovide" }
 
 for _, nb in ipairs(noborders) do
 	hl.window_rule({
@@ -130,7 +145,7 @@ for _, nsh in ipairs(noshadows) do
 	})
 end
 
-local lr = { "rofi", "waybar" }
+local lr = { "cool-retro-term", "rofi", "waybar" }
 
 for _, ns in ipairs(lr) do
 	hl.layer_rule({
@@ -139,12 +154,12 @@ for _, ns in ipairs(lr) do
 	})
 end
 
-for i = 1, 9 do
+for i = 1, 8 do
 	hl.workspace_rule({ workspace = tostring(i), monitor = "DP-2" })
 end
 
-hl.workspace_rule({ workspace = "11", monitor = "HDMI-A-2" })
-hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-3" })
+hl.workspace_rule({ workspace = "9", monitor = "HDMI-A-3" })
+hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-2" })
 
 hl.layer_rule({
 	match = { namespace = "rofi" },

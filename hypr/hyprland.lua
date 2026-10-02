@@ -6,6 +6,7 @@ require("idle")
 require("keybinds")
 require("plugins")
 require("rules")
+require("shaders")
 ------------------
 ---- MONITORS ----
 ------------------
@@ -13,7 +14,7 @@ require("rules")
 hl.monitor({
 	output = "DP-2",
 	mode = "3840x2160@144",
-	position = "auto-right",
+	position = "1920x0",
 	scale = 1.5,
 	bitdepth = 10,
 	cm = "srgb",
@@ -41,7 +42,7 @@ hl.monitor({
 	output = "HDMI-A-2",
 	mode = "3840x2160@60",
 	position = "auto-left",
-	scale = "1.5",
+	scale = 1.5,
 	bitdepth = 10,
 	cm = "hdredid",
 	supports_hdr = true,

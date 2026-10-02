@@ -96,6 +96,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-claudebar
 #tray,
 #mode,
 #idle_inhibitor,
@@ -153,7 +154,9 @@ label:focus {
 }
 
 #backlight {
-  background-color: #90b1b1;
+  color: inherit;
+  background-color: inherit;
+  padding: 0px 5px;
 }
 
 #network {
@@ -285,6 +288,13 @@ label:focus {
   color: inherit;
   padding: 0 0px;
   margin: 0 0px;
+}
+
+#custom-claudebar {
+  color: inherit;
+  background-color: inherit;
+  padding: 0 8px;
+  margin: 0 4px;
 }
 
 #network.dlSpeed,

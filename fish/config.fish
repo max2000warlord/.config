@@ -6,7 +6,7 @@ set fish_greeting
 set fish_key_bindings fish_default_key_bindings
 set -U tide_left_prompt_prefix \ue0c2
 set -U tide_left_prompt_suffix \ue0c0
-set -U tide_os_icon \uf400
+set -U tide_os_icon \uf385
 set -U tide_pwd_bg_color 1DB954
 set -U tide_left_prompt_separator_diff_color \ue0c0
 zoxide init fish | source
@@ -15,8 +15,8 @@ fastfetch
 ###################
 ###   ALIASES   ###
 ###################
-alias az='yazi'
-alias cat='bat'
+alias xf='xfetch'
+alias cat='bat -p'
 alias doom='~/.emacs.d/bin/doom'
 alias xe='chmod +x'
 alias exe='sudo chmod +x'
@@ -50,6 +50,9 @@ alias kdeconnectd='QT_QPA_PLATFORM=xcb /usr/bin/kdeconnectd'
 ##################
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.bun/bin $PATH
+set -gx HYPRSHOT_DIR ~/Pictures/Screenshots
+set -x ZVM_INSTALL "$HOME/.zvm/self"
+set -x PATH "$HOME/.zvm/bin" "$ZVM_INSTALL" $PATH
 set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -x LD_LIBRARY_PATH $HOME/.local/lib/arch-mojo $LD_LIBRARY_PATH
 fish_add_path /opt/fil/bin

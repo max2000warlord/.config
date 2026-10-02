@@ -3,8 +3,8 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        json = { "prettierd" },
-        jsonc = { "prettierd" },
+        json = { "prettier" },
+        jsonc = { "prettier" },
       },
       -- format_on_save = {
       --   timeout_ms = 500,
@@ -29,27 +29,40 @@ return {
             },
           },
         },
-
-        clangd = {
-          mason = false,
-          cmd = {
-            "/usr/bin/clangd",
-            "--background-index",
-            "--clang-tidy",
-            "--header-insertion=iwyu",
-          },
-          filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-        },
-      },
-
-      -- Tell LazyVim's lspconfig handler not to hand clangd to Mason
-      setup = {
-        clangd = function(_, opts)
-          require("lspconfig").clangd.setup(opts)
-          return true
-        end,
       },
     },
+  },
+
+  -- Native vim.lsp.config for servers needing custom cmd overrides
+  {
+    "neovim/nvim-lspconfig",
+    lazy = false,
+    config = function()
+      vim.lsp.config("clangd", {
+        cmd = {
+          "/usr/bin/clangd",
+          "--background-index",
+          "--clang-tidy",
+          "--header-insertion=iwyu",
+        },
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
+      })
+      vim.lsp.enable("clangd")
+
+      vim.lsp.config("qmlls", {
+        cmd = {
+          "qmlls",
+          "-E",
+          "-I",
+          "/usr/lib/qt6/qml",
+          "-I",
+          "/home/max/!conf/quickshell/spx-quickshell",
+          "-I",
+          "/home/max/.config/quickshell/spx-quickshell",
+        },
+      })
+      vim.lsp.enable("qmlls")
+    end,
   },
   {
     "mason-org/mason-lspconfig.nvim",
@@ -210,11 +223,6 @@ return {
       vim.keymap.set("n", "<leader>cc", "<leader>c_", { remap = true, desc = "Copy line via OSC52" })
       vim.keymap.set("x", "<leader>c", osc52.copy_visual, { desc = "Copy selection via OSC52" })
     end,
-  },
-  {
-    "cephei8/odin.nvim",
-    lazy = false,
-    opts = {},
   },
   {
     "shortcuts/no-neck-pain.nvim",

@@ -7,7 +7,7 @@
 local term = "ghostty"
 local fileManager = "thunar"
 local menu = "rofi -show drun"
-local browser = "zen-browser"
+local browser = "brave-origin"
 local editor = "neovide"
 local logout = "wlogout"
 local lock = "hyprlock"
@@ -49,7 +49,7 @@ hl.bind(comboMod .. " + L", hl.dsp.exec_cmd(lock))
 hl.bind(ctrlMod .. " + P", hl.dsp.exec_cmd(mail))
 
 -- screencapping with Hyprshot
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprshot -m window --clipboard-only"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprshot -m window -o ~/Pictures/Screenshots/ "))
 hl.bind(comboMod .. " + S", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
 hl.bind(ctrlMod .. " + S", hl.dsp.exec_cmd("hyprshot -m output --clipboard-only"))
 hl.bind(ctrlMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot-border --clipboard-only"))

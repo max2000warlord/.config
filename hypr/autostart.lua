@@ -9,8 +9,9 @@
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent")
-	hl.exec_cmd("waybar & awww-daemon")
+	hl.exec_cmd("waybar & awww-daemon & ")
 	hl.exec_cmd("$HOME/.config/hypr/inits/wallust.sh")
-	hl.exec_cmd("nm-applet & blueman-applet & solaar")
+	hl.exec_cmd("nm-applet & blueman-applet")
 	hl.exec_cmd("hypridle")
+	hl.exec_cmd("sleep 3 && 1password")
 end)

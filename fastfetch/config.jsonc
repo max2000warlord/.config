@@ -2,112 +2,58 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "kitty",
-    "source": "/home/max/.config/fastfetch/ER_golden_order.png",
-    "width": 33,
+    "source": "/home/max/.config/fastfetch/cachyOS.png",
+    //"color": {
+    //  "1": "white",
+    //  "2": "red",
+    //  "3": "38;2;50;50;50",
+    //  "4": "green"
+    //}
+    "width": 35,
     "padding": {
       "top": 1,
-      "right": 3,
-      "left": 3
+      "right": 1,
+      "left": 1
     }
-    //"height": 10
   },
-  "display": {
-    "separator": "  "
-  },
+  "display": { "separator": " " },
   "modules": [
+    { "key": "╭───────────╮", "type": "custom" },
+    { "key": "│  user    │", "type": "title", "format": "{user-name}" },
+    //{ "key": "│ 󰇅 hname   │", "type": "title", "format": "{host-name}" },
+    { "key": "│ 󰅐 uptime  │", "type": "uptime" },
     {
-      "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m╔════════════════════╗\u001b[0m"
+      "key": "│ └  dtime │",
+      "type": "command",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
+    { "key": "│  distro  │", "type": "os" },
+    { "key": "│  kernel  │", "type": "kernel" },
+    { "key": "│  WM      │", "type": "wm", "format": "{1} v{5}" },
+    { "key": "│  term    │", "type": "terminal" },
+    { "key": "│  shell   │", "type": "shell" },
+    { "key": "├───────────┤", "type": "custom" },
+    { "key": "│ PC        │", "type": "custom" },
     {
-      "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m\u001b[38;2;23;147;209m║\u001b[1;34mHardware Information\u001b[38;2;23;147;209m║\u001b[0m"
-    },
-    {
-      "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m╚════════════════════╝\u001b[0m"
-    },
-    {
+      "key": "│ ├ 󰍛 CPU   │",
       "type": "cpu",
-      "key": "\u001b[38;2;255;0;0m󰻠\u001b[0m",
-      "format": "{1}"
+      "format": "{1}",
+      "showPeCoreCount": false
     },
     {
+      "key": "│ ├ 󰢮 GPU   │",
       "type": "gpu",
       "hideType": "integrated",
-      "key": "\u001b[1;32m󰢮\u001b[0m",
       "format": "{1} {2}"
     },
-    {
-      "type": "disk",
-      "key": "\u001b[38;2;255;165;0m\u001b[0m"
-    },
-    {
-      "type": "memory",
-      "key": "\u001b[1;33m\u001b[0m",
-      "percent": {
-        "type": 3, // 3 = show number + bar + percentage
-        "green": 30, // <30% is green
-        "yellow": 70 // 30-70% is yellow, >70% is red
-      }
-      //"format": "{1} / {2} ({3}) {4}"
-    },
-    {
-      "type": "display",
-      "key": "󰍹"
-    },
-    {
-      "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m╔════════════════════╗\u001b[0m"
-    },
-    {
-      "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m\u001b[38;2;23;147;209m║\u001b[1;34mSoftware Information\u001b[38;2;23;147;209m║\u001b[0m"
-    },
-    {
-      "type": "custom", // SoftwareStart
-      "format": "\u001b[38;2;23;147;209m╚════════════════════╝\u001b[0m"
-    },
-    {
-      "type": "title",
-      "key": "",
-      "format": "{1}@{2}"
-    },
+    { "key": "│ ├  disk  │", "type": "disk", "folders": "/" },
+    { "key": "│ ├  RAM   │", "type": "memory" },
+    { "key": "│ └ 󰓡 swap  │", "type": "swap" },
     //{
-    //  "type": "os",
-    //  "key": "\u001b[38;2;23;147;209m󰣇\u001b[0m" // Just get your distro's logo off nerdfonts.com
+    //  "key": "│ ├  disp  │",
+    //  "type": "monitor",
+    //  "format": "{2}×{3} @ {11}Hz"
     //},
-    {
-      "type": "kernel",
-      "key": "\u001b[38;2;23;147;209m\u001b[0m",
-      "format": "{2}"
-    },
-    {
-      "type": "wm",
-      "key": "",
-      "format": "{2}"
-    },
-    {
-      "type": "shell",
-      "key": ""
-    },
-    {
-      "type": "terminal",
-      "key": "",
-      "format": "{5}"
-    },
-    {
-      "type": "packages",
-      "key": "\u001b[38;2;255;255;0m󰮯\u001b[0m",
-      "format": "{1}"
-    },
-    {
-      "type": "uptime",
-      "key": "󰅐"
-    },
-    {
-      "type": "locale",
-      "key": ""
-    }
+    { "key": "╰───────────╯", "type": "custom" }
   ]
 }
