@@ -1,5 +1,4 @@
 fish/fish_variables*
-!fish/fish_variables
 nvim/lazy-lock.json
 nvim/lazyvim.json
 rofi/themes
