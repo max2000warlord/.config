@@ -23,7 +23,6 @@
     "modules-center": ["network#ulSpeed", "clock", "network#dlSpeed"],
     "modules-right": [
       "group/drawer",
-      "custom/pipewire",
       //"custom/cpu",
       "idle_inhibitor",
       "custom/claudebar",

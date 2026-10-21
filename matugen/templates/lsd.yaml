@@ -1,0 +1,39 @@
+---
+user: "{{colors.primary.dark.hex}}"
+group: "{{colors.secondary.dark.hex}}"
+permission:
+  read: "{{colors.tertiary.dark.hex}}"
+  write: "{{colors.primary.dark.hex}}"
+  exec: "{{colors.error.dark.hex}}"
+  exec-sticky: "{{colors.secondary.dark.hex}}"
+  no-access: "{{colors.outline.dark.hex}}"
+  octal: "{{colors.tertiary.dark.hex}}"
+  acl: "{{colors.secondary.dark.hex}}"
+  context: "{{colors.primary.dark.hex}}"
+date:
+  hour-old: "{{colors.tertiary.dark.hex}}"
+  day-old: "{{colors.primary.dark.hex}}"
+  older: "{{colors.outline.dark.hex}}"
+size:
+  none: "{{colors.outline.dark.hex}}"
+  small: "{{colors.on_surface_variant.dark.hex}}"
+  medium: "{{colors.secondary.dark.hex}}"
+  large: "{{colors.primary.dark.hex}}"
+inode:
+  valid: "{{colors.secondary.dark.hex}}"
+  invalid: "{{colors.outline.dark.hex}}"
+links:
+  valid: "{{colors.secondary.dark.hex}}"
+  invalid: "{{colors.outline.dark.hex}}"
+tree-edge: "{{colors.outline.dark.hex}}"
+git-status:
+  dark: "{{colors.outline.dark.hex}}"
+  unmodified: "{{colors.outline.dark.hex}}"
+  ignored: "{{colors.outline.dark.hex}}"
+  new-in-index: "{{colors.tertiary.dark.hex}}"
+  new-in-workdir: "{{colors.tertiary.dark.hex}}"
+  typechange: "{{colors.primary.dark.hex}}"
+  deleted: "{{colors.error.dark.hex}}"
+  renamed: "{{colors.tertiary.dark.hex}}"
+  modified: "{{colors.primary.dark.hex}}"
+  conflicted: "{{colors.error.dark.hex}}"

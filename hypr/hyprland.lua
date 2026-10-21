@@ -44,7 +44,7 @@ hl.monitor({
 	position = "auto-left",
 	scale = 1.5,
 	bitdepth = 10,
-	cm = "hdredid",
+	cm = "srgb",
 	supports_hdr = true,
 	supports_wide_color = true,
 	sdrbrightness = 1.2,

@@ -55,6 +55,11 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	match = { class = "thunar", title = "^Rename.*" },
+	float = true,
+})
+
+hl.window_rule({
 	match = { class = "org.pulseaudio.pavucontrol" },
 	float = true,
 	-- size = "monitor_w*0.4 monitor_h*0.4",
@@ -125,6 +130,16 @@ hl.window_rule({
 	match = { title = "jetbrains-toolbox" },
 	float = true,
 	center = true,
+})
+
+hl.window_rule({
+	match = {
+		class = "hyprland-share-picker",
+		title = "Select what to share",
+	},
+	float = true,
+	size = "750 750",
+	--center = true,
 })
 
 -- No border: Ghostty, Neovide, GLava

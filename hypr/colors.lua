@@ -1,105 +1,105 @@
 local colors = {
-    image = "/home/max/Pictures/Wallpaper/Metal/fear-of-tomorrow-4K.jpg",
+    image = "/home/max/Pictures/Wallpaper/rutger-van-de-steeg-vertex1.png",
 
-    background = "#1a1110",
+    background = "#111318",
 
     error = "#ffd2cc",
 
     error_container = "#ff5449",
 
-    inverse_on_surface = "#322826",
+    inverse_on_surface = "#282a2f",
 
-    inverse_primary = "#74352c",
+    inverse_primary = "#244978",
 
-    inverse_surface = "#f1dfdc",
+    inverse_surface = "#e1e2e9",
 
-    on_background = "#f1dfdc",
+    on_background = "#e1e2e9",
 
     on_error = "#540003",
 
     on_error_container = "#000000",
 
-    on_primary = "#48140d",
+    on_primary = "#00264c",
 
     on_primary_container = "#000000",
 
-    on_primary_fixed = "#2c0101",
+    on_primary_fixed = "#001128",
 
-    on_primary_fixed_variant = "#5e241c",
+    on_primary_fixed_variant = "#0c3765",
 
-    on_secondary = "#381f1b",
+    on_secondary = "#1c2636",
 
     on_secondary_container = "#000000",
 
-    on_secondary_fixed = "#200b08",
+    on_secondary_fixed = "#071120",
 
-    on_secondary_fixed_variant = "#4b2f2b",
+    on_secondary_fixed_variant = "#2d3747",
 
     on_surface = "#ffffff",
 
-    on_surface_variant = "#eed7d4",
+    on_surface_variant = "#d9dce5",
 
-    on_tertiary = "#322300",
+    on_tertiary = "#321e3a",
 
     on_tertiary_container = "#000000",
 
-    on_tertiary_fixed = "#181000",
+    on_tertiary_fixed = "#1c0924",
 
-    on_tertiary_fixed_variant = "#443409",
+    on_tertiary_fixed_variant = "#442e4c",
 
-    outline = "#c2adaa",
+    outline = "#afb2bb",
 
-    outline_variant = "#a08c89",
+    outline_variant = "#8d9099",
 
-    primary = "#ffd2cb",
+    primary = "#cbddff",
 
-    primary_container = "#cc7b6f",
+    primary_container = "#7092c6",
 
-    primary_fixed = "#ffdad4",
+    primary_fixed = "#d5e3ff",
 
-    primary_fixed_dim = "#ffb4a8",
+    primary_fixed_dim = "#a6c8ff",
 
     scrim = "#000000",
 
-    secondary = "#fed2cb",
+    secondary = "#d2ddf2",
 
-    secondary_container = "#ae8882",
+    secondary_container = "#8791a5",
 
-    secondary_fixed = "#ffdad4",
+    secondary_fixed = "#d9e3f8",
 
-    secondary_fixed_dim = "#e7bdb6",
+    secondary_fixed_dim = "#bdc7dc",
 
     shadow = "#000000",
 
-    source_color = "#cb0001",
+    source_color = "#4782cf",
 
-    surface = "#1a1110",
+    surface = "#111318",
 
-    surface_bright = "#4e4240",
+    surface_bright = "#42444a",
 
-    surface_container = "#302624",
+    surface_container = "#26282d",
 
-    surface_container_high = "#3b302e",
+    surface_container_high = "#303338",
 
-    surface_container_highest = "#463b39",
+    surface_container_highest = "#3b3e43",
 
-    surface_container_low = "#251b1a",
+    surface_container_low = "#1b1e22",
 
-    surface_container_lowest = "#0d0605",
+    surface_container_lowest = "#05070c",
 
-    surface_dim = "#1a1110",
+    surface_dim = "#111318",
 
-    surface_tint = "#ffb4a8",
+    surface_tint = "#a6c8ff",
 
-    surface_variant = "#534341",
+    surface_variant = "#43474e",
 
-    tertiary = "#f5d9a0",
+    tertiary = "#f1d2f8",
 
-    tertiary_container = "#a58e5b",
+    tertiary_container = "#a288aa",
 
-    tertiary_fixed = "#fbdfa6",
+    tertiary_fixed = "#f7d8ff",
 
-    tertiary_fixed_dim = "#dec48c",
+    tertiary_fixed_dim = "#dabde2",
 
 }
 

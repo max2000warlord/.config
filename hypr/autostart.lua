@@ -14,4 +14,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("nm-applet & blueman-applet")
 	hl.exec_cmd("hypridle")
 	hl.exec_cmd("sleep 3 && 1password")
+	hl.exec_cmd(
+		[[fish -c 'set img (strings ~/.cache/awww/*/DP-2 | string match -r "^/.*" | head -n1); test -n "$img"; and ln -sf $img ~/.cache/awww/current']]
+	)
 end)
